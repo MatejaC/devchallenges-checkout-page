@@ -1,0 +1,62 @@
+/* fonts */
+$font: "Montserrat", sans-serif;
+
+/* colors */
+$background-gray: #f2f2f2;
+$gray-dark: #4e5150;
+
+$gray1: #333333;
+$gray2-email: #4f4f4f;
+$gray3-border-placeholder-icons: #828282;
+$gray4-line: #bdbdbd;
+$gray5-background-icons: #e0e0e0;
+$gray6-background-rectangle: #f2f2f2;
+$orange: #f2994a;
+$white: #ffffff;
+$grayFooter: #a9a9a9;
+
+/* base styles */
+*,
+*::before,
+*::after {
+ -moz-box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+.clearfix {
+ zoom: 1;
+}
+
+@viewport {
+ width: device-width;
+ zoom: 1;
+}
+
+@-ms-viewport {
+ width: device-width;
+}
+
+.row {
+ position: relative;
+}
+
+.row::after {
+ content: "";
+ display: block;
+ clear: both;
+}
+
+body {
+ font-family: $font;
+ background-color: $white;
+}
+
+/* mobile */
+.container {
+ display: grid;
+ margin: 0 auto;
+ grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+}
