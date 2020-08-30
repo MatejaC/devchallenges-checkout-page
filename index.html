@@ -7,45 +7,52 @@
   <link rel="stylesheet" type="text/css" href="/devchallenges-checkout-page/scss/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script scr="jquery.js"></script>
   <title>Checkout page</title>
-  <script src="script.js"></script>
+
 </head>
 
 <body>
 
   <div class="container"></div>
-  <h1>Checkout</h1>
+  <h1 class="checkout">Checkout</h1>
+
   <section class="rectangle-purchase">
-    <img class="backbag" src="./assets/photo1.png" alt="backbag">
-    <h5>Vintage Backbag</h5>
-    <h5 class="price">$54.99</h5>
-    <h5 class="old-price">$94.99</h5>
+    <div class="backbag-section">
+      <img class="backbag" src="./assets/photo1.png" alt="backbag">
+      <h5 class="name-bag">Vintage Backbag</h5>
+      <h5 class="price1">$54.99</h5>
+      <h5 class="old-price1">$94.99</h5>
 
-    <div class="input-group">
-      <input type="button" value="-" class="button-minus" data-field="quantity">
-      <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
-      <input type="button" value="+" class="button-plus" data-field="quantity">
+      <form id="myform" method="POST" action="#">
+        <input type="button" value="-" class="qtyminus" field="quantity" />
+        <input type="text" name="quantity" value="0" class="qty" />
+        <input type="button" value="+" class="qtyplus" field="quantity" />
+      </form>
     </div>
 
-    <img class="backbag" src="./assets/photo1.png" alt="backbag">
-    <h5>Levi Shoes</h5>
-    <h5 class="price">$74.99</h5>
-    <h5 class="old-price">$124.99</h5>
-
-    <div class="input-group">
-      <input type="button" value="-" class="button-minus" data-field="quantity">
-      <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
-      <input type="button" value="+" class="button-plus" data-field="quantity">
+    <div class="shoes-section">
+      <img class="shoes" src="./assets/photo2.png" alt="shoes">
+      <h5 class="name-shoes">Levi Shoes</h5>
+      <h5 class="price2">$74.99</h5>
+      <h5 class="old-price2">$124.99</h5>
+      <form id="myform" method="POST" action="#">
+        <input type="button" value="-" class="qtyminus" field="quantity" />
+        <input type="text" name="quantity2" value=" 0" class="qty">
+        <input type="button" value="+" class="qtyplus" field="quantity" />
+      </form>
     </div>
+  </section>/
 
-    <hr>
 
-    <h3>Shipping</h3>
-    <h3>$19</h3>
-    <hr>
-    <h3>Total</h3>
-    <h3>$148.98</h3>
-  </section>
+  <hr>
+
+  <h3>Shipping</h3>
+  <h3>$19</h3>
+  <hr>
+  <h3>Total</h3>
+  <h3>$148.98</h3>
+  <!-- 
 
   <h4>Contact infomation</h4>
   <div>
@@ -102,7 +109,7 @@
 
 
   <footer><a href="https://github.com/MatejaC/devchallenges-checkout-page">Mateja Cimpersak @
-      DevChallenges.io</a></footer>
+      DevChallenges.io</a></footer> -->
 
 
 
@@ -110,7 +117,7 @@
 
 
 
-  <script src="script.js "></script>
+  <script scr="jquery.js"></script>
 
 </body>
 

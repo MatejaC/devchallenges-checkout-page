@@ -50,6 +50,7 @@ $grayFooter: #a9a9a9;
 
 body {
  font-family: $font;
+ font-weight: 600;
  background-color: $white;
 }
 
@@ -57,80 +58,216 @@ body {
 .container {
  display: grid;
  margin: 0 auto;
- grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+ grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+}
+
+.checkout {
+ grid-column: 1 / 2;
+ color: $gray-dark;
+ font-weight: 600;
+ font-size: 24px;
+ line-height: 29px;
+ margin: 2rem 0 1.2rem 1.12rem;
 }
 
 .rectangle-purchase {
+ display: grid;
  background: $gray6-background-rectangle;
  border-radius: 12px;
+ margin: 0 12px 0 13px;
 }
+.backbag-section {
+ display: grid;
+ grid-template-columns: repeat(8, 1fr);
+}
+
+.backbag {
+ grid-column: 1 / 4;
+ grid-row: 1 / 4;
+ width: 100%;
+ max-width: 100ch;
+ border-radius: 0.8rem;
+ margin: 1.7rem 0rem 1.7rem 1.5rem;
+}
+
+.name-bag {
+ grid-column: 5 / 9;
+ grid-row: 1;
+ font-size: 0.75rem;
+ line-height: 0.8rem;
+ color: $gray-dark;
+ margin: 1.9rem 0rem 0.7rem 0rem;
+}
+.price1 {
+ grid-column: 5 / 6;
+ grid-row: 2;
+ font-weight: 600;
+ font-size: 14px;
+ line-height: 17px;
+ color: $orange;
+ margin: -1.7rem 0rem 0.7rem 0rem;
+}
+
+.old-price1 {
+ grid-column: 6 / 7;
+ grid-row: 2;
+ font-size: 10px;
+ line-height: 12px;
+ text-decoration-line: line-through;
+ margin: -1.5rem 0rem 0rem 0.7rem;
+}
+
 /* -- quantity box -- */
-
-input,
-textarea {
- border: 1px solid #eeeeee;
- box-sizing: border-box;
- margin: 0;
- outline: none;
- padding: 10px;
-}
-
-input[type="button"] {
- -webkit-appearance: button;
- cursor: pointer;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
- -webkit-appearance: none;
-}
-
-.input-group {
- clear: both;
- margin: 15px 0;
- position: relative;
-}
-
-.input-group input[type="button"] {
- background-color: #eeeeee;
- min-width: 38px;
- width: auto;
- transition: all 300ms ease;
-}
-
-.input-group .button-minus,
-.input-group .button-plus {
- font-weight: bold;
- height: 38px;
- padding: 0;
- width: 38px;
- position: relative;
-}
-
-.input-group .quantity-field {
- position: relative;
- height: 38px;
- left: -6px;
+#myform {
+ grid-column: 5 / 8;
+ grid-row: 3;
  text-align: center;
- width: 62px;
- display: inline-block;
- font-size: 13px;
- margin: 0 0 5px;
- resize: vertical;
+ padding: 0.8rem 0 0 0rem;
+ font-family: $font;
+ font-weight: 600;
+ border: 1px solid $gray3-border-placeholder-icons;
+ background-color: $gray6-background-rectangle;
+ justify-items: center;
+ align-items: center;
+ border-radius: 12px;
+ width: 138px;
+ height: 55px;
+ margin: -1rem 0 0 0;
+}
+.qty {
+ border-radius: 4px;
+ width: 50px;
+ height: 25px;
+ text-align: center;
+ border: none;
+ font-size: 1.1rem;
+ color: $gray1;
+ font-weight: 600;
+ background-color: $gray6-background-rectangle;
+}
+input.qtyplus {
+ width: 25px;
+ height: 25px;
+ border-radius: 4px;
+ border: none;
+ background-color: $gray5-background-icons;
+ color: $gray3-border-placeholder-icons;
+ text-align: center;
+ font-weight: 600;
+ font-size: 1.6rem;
+ line-height: 1.5rem;
+}
+input.qtyminus {
+ font-weight: 600;
+ width: 25px;
+ height: 25px;
+ border: none;
+ border-radius: 4px;
+ background-color: $gray5-background-icons;
+ color: $gray3-border-placeholder-icons;
+ text-align: center;
+ align-items: center;
+ font-size: 1.6rem;
+ line-height: 1.5rem;
 }
 
-.button-plus {
- left: -13px;
+.shoes-section {
+ display: grid;
+ grid-template-columns: repeat(8, 1fr);
 }
 
-input[type="number"] {
- -moz-appearance: textfield;
- -webkit-appearance: none;
+.shoes {
+ grid-column: 1 / 4;
+ grid-row: 1 / 4;
+ width: 100%;
+ max-width: 100ch;
+ border-radius: 0.8rem;
+ margin: 1.7rem 0rem 1.7rem 1.5rem;
 }
 
+.name-shoes {
+ grid-column: 5 / 9;
+ grid-row: 1;
+ font-size: 0.75rem;
+ line-height: 0.8rem;
+ color: $gray-dark;
+ margin: 1.9rem 0rem 0.7rem 0rem;
+}
+.price2 {
+ grid-column: 5 / 6;
+ grid-row: 2;
+ font-weight: 600;
+ font-size: 14px;
+ line-height: 17px;
+ color: $orange;
+ margin: -1.7rem 0rem 0.7rem 0rem;
+}
+
+.old-price2 {
+ grid-column: 6 / 7;
+ grid-row: 2;
+ font-size: 10px;
+ line-height: 12px;
+ text-decoration-line: line-through;
+ margin: -1.5rem 0rem 0rem 0.7rem;
+}
+
+/* -- quantity box -- */
+#myform2 {
+ grid-column: 5 / 8;
+ grid-row: 3;
+ text-align: center;
+ padding: 0.8rem 0 0 0rem;
+ font-family: $font;
+ font-weight: 600;
+ border: 1px solid $gray3-border-placeholder-icons;
+ background-color: $gray6-background-rectangle;
+ justify-items: center;
+ align-items: center;
+ border-radius: 12px;
+ width: 138px;
+ height: 55px;
+ margin: -0.2rem 0 0 0;
+}
+.qty {
+ border-radius: 4px;
+ width: 50px;
+ height: 25px;
+ text-align: center;
+ border: none;
+ font-size: 1.1rem;
+ color: $gray1;
+ font-weight: 600;
+ background-color: $gray6-background-rectangle;
+}
+input.qtyplus {
+ width: 25px;
+ height: 25px;
+ border-radius: 4px;
+ border: none;
+ background-color: $gray5-background-icons;
+ color: $gray3-border-placeholder-icons;
+ text-align: center;
+ font-weight: 600;
+ font-size: 1.6rem;
+ line-height: 1.5rem;
+}
+input.qtyminus {
+ font-weight: 600;
+ width: 25px;
+ height: 25px;
+ border: none;
+ border-radius: 4px;
+ background-color: $gray5-background-icons;
+ color: $gray3-border-placeholder-icons;
+ text-align: center;
+ align-items: center;
+ font-size: 1.6rem;
+ line-height: 1.5rem;
+}
 /* forms */
 
-input[type="text"],
+/* input[type="text"],
 select {
  width: 100%;
  padding: 12px 20px;
@@ -140,16 +277,15 @@ select {
  border-radius: 4px;
  box-sizing: border-box;
 }
-div {
- padding: 20px;
-}
+
 select {
  width: 100%;
  padding: 16px 20px;
  border: none;
  border-radius: 4px;
-}
-input[type="button"] {
+} */
+
+/* input[type="button"] {
  background-color: $orange;
  border: none;
  color: white;
@@ -158,7 +294,7 @@ input[type="button"] {
  text-decoration: none;
  cursor: pointer;
  border-radius: 12px;
-}
+} */
 
 footer {
  font-family: $font;
