@@ -48,7 +48,8 @@ $grayFooter: #a9a9a9;
  clear: both;
 }
 
-body {
+body,
+html {
  font-family: $font;
  font-weight: 600;
  background-color: $white;
@@ -58,6 +59,8 @@ body {
 .container {
  display: grid;
  margin: 0 auto;
+ font-family: $font;
+ font-weight: 600;
  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
 }
 
@@ -87,7 +90,7 @@ body {
  width: 100%;
  max-width: 100ch;
  border-radius: 0.8rem;
- margin: 1.7rem 0rem 1.7rem 1.5rem;
+ margin: 1.5rem 0rem 0rem 1.5rem;
 }
 
 .name-bag {
@@ -105,7 +108,7 @@ body {
  font-size: 14px;
  line-height: 17px;
  color: $orange;
- margin: -1.7rem 0rem 0.7rem 0rem;
+ margin: -0.2rem 0rem 0.7rem 0rem;
 }
 
 .old-price1 {
@@ -114,7 +117,7 @@ body {
  font-size: 10px;
  line-height: 12px;
  text-decoration-line: line-through;
- margin: -1.5rem 0rem 0rem 0.7rem;
+ margin: 0rem 0rem 0rem 0.7rem;
 }
 
 /* -- quantity box -- */
@@ -132,7 +135,7 @@ body {
  border-radius: 12px;
  width: 138px;
  height: 55px;
- margin: -1rem 0 0 0;
+ margin: 1rem 0 0 0;
 }
 .qty {
  border-radius: 4px;
@@ -182,7 +185,7 @@ input.qtyminus {
  width: 100%;
  max-width: 100ch;
  border-radius: 0.8rem;
- margin: 1.7rem 0rem 1.7rem 1.5rem;
+ margin: 1.5rem 0rem 1.7rem 1.5rem;
 }
 
 .name-shoes {
@@ -200,7 +203,7 @@ input.qtyminus {
  font-size: 14px;
  line-height: 17px;
  color: $orange;
- margin: -1.7rem 0rem 0.7rem 0rem;
+ margin: -0.2rem 0rem 0.7rem 0rem;
 }
 
 .old-price2 {
@@ -209,7 +212,7 @@ input.qtyminus {
  font-size: 10px;
  line-height: 12px;
  text-decoration-line: line-through;
- margin: -1.5rem 0rem 0rem 0.7rem;
+ margin: 0rem 0rem 6.5rem 0.7rem;
 }
 
 /* -- quantity box -- */
@@ -227,7 +230,7 @@ input.qtyminus {
  border-radius: 12px;
  width: 138px;
  height: 55px;
- margin: -0.2rem 0 0 0;
+ margin: -4.5rem 0 0 0;
 }
 .qty {
  border-radius: 4px;
@@ -264,6 +267,32 @@ input.qtyminus {
  align-items: center;
  font-size: 1.6rem;
  line-height: 1.5rem;
+}
+
+.hr1 {
+ margin: 3rem 1.5rem 0.5rem 1.5rem;
+}
+.hr2 {
+ margin: 0.5rem 1.5rem 0.5rem 1.5rem;
+}
+.shipping {
+ font-size: 14px;
+ line-height: 17px;
+ color: $gray1;
+ font-weight: 600;
+ margin: 0rem 1.5rem 0rem 1.5rem;
+}
+span {
+ font-weight: 600;
+ float: right;
+}
+
+.total {
+ font-size: 14px;
+ line-height: 17px;
+ color: $gray1;
+ font-weight: 600;
+ margin: 0rem 1.5rem 1.5rem 1.5rem;
 }
 /* forms */
 
