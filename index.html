@@ -2,74 +2,115 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" type="text/css" href="/devchallenges-checkout-page/scss/style.css" />
- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
- <title>Checkout page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/devchallenges-checkout-page/scss/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Checkout page</title>
+  <script src="script.js"></script>
 </head>
-<div class="container"></div>
-<h1>Checkout</h1>
-<section class="purchased">
- <img class="backbag" src="/devchallenges-checkout-page/assets/photo1.png" alt="backbag">
- <h5>Vintage Backbag</h5>
- <h5 class="price">$54.99</h5>
- <h5 class="old-price">$94.99</h5>
- <div class="rectangle-nmb-items">1</div>
- <img class="backbag" src="/devchallenges-checkout-page/assets/photo1.png" alt="backbag">
- <h5>Levi Shoes</h5>
- <h5 class="price">$74.99</h5>
- <h5 class="old-price">$124.99</h5>
- <div class="rectangle-nmb-items">1</div>
-
- <hr>
- <h3>Shipping</h3>
- <h3>$19</h3>
- <hr>
- <h3>Total</h3>
- <h3>$148.98</h3>
-</section>
-
-<h4>Contact infomation</h4>
-<h6>E-mail</h6>
-<div class="rectangle-placeholder">Enter your email...</div>
-
-<h6>Phone</h6>
-<div class="rectangle-placeholder">Enter your phone...</div>
-
-<h4>Contact infomation</h4>
-<h6>E-mail</h6>
-<div class="rectangle-placeholder">Enter your email...</div>
-
-<h4>Shipping address</h4>
-<h6>Full name</h6>
-<div class="rectangle-placeholder">Rodney Cotton</div>
-
-<h6>Adress</h6>
-<div class="rectangle-placeholder">Your address..</div>
-
-<h6>City</h6>
-<div class="rectangle-placeholder">Your city..</div>
-
-<h6>Country</h6>
-<div class="rectangle-placeholder">Your country..</div>
-
-<h6>Postal code</h6>
-<div class="rectangle-placeholder">Your postal code..</div>
-
-<!-- checkbox  -->
-<span>Save this information for next time</span>
-
-<button>Continue</button>
-
-<footer><a href="https://github.com/MatejaC/devchallenges-checkout-page">Mateja Cimpersak @
-  DevChallenges.io</a></footer>
-
-
-
-
 
 <body>
+
+  <div class="container"></div>
+  <h1>Checkout</h1>
+  <section class="rectangle-purchase">
+    <img class="backbag" src="./assets/photo1.png" alt="backbag">
+    <h5>Vintage Backbag</h5>
+    <h5 class="price">$54.99</h5>
+    <h5 class="old-price">$94.99</h5>
+
+    <div class="input-group">
+      <input type="button" value="-" class="button-minus" data-field="quantity">
+      <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+      <input type="button" value="+" class="button-plus" data-field="quantity">
+    </div>
+
+    <img class="backbag" src="./assets/photo1.png" alt="backbag">
+    <h5>Levi Shoes</h5>
+    <h5 class="price">$74.99</h5>
+    <h5 class="old-price">$124.99</h5>
+
+    <div class="input-group">
+      <input type="button" value="-" class="button-minus" data-field="quantity">
+      <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+      <input type="button" value="+" class="button-plus" data-field="quantity">
+    </div>
+
+    <hr>
+
+    <h3>Shipping</h3>
+    <h3>$19</h3>
+    <hr>
+    <h3>Total</h3>
+    <h3>$148.98</h3>
+  </section>
+
+  <h4>Contact infomation</h4>
+  <div>
+    <label for="e-mail">E-mail</label>
+    <input type="text" id="e-mail" name="e-mail adress" placeholder="Enter your email...">
+  </div>
+
+  <div>
+    <label for="phone">Phone</label>
+    <input type="text" id="phone" name="phone number" placeholder="Enter your phone...">
+  </div>
+
+  <h4>Shipping address</h4>
+
+  <div>
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fulltname" placeholder="Rodney Cotton">
+  </div>
+
+  <div>
+    <label for="adress">Adress</label>
+    <input type="text" id="adress" name="adress" placeholder="Your address..">
+  </div>
+
+  <div>
+    <label for="city">City</label>
+    <input type="text" id="city" name="city" placeholder="Your city..">
+  </div>
+
+  <div>
+    <label for="country">Country</label>
+
+    <select id="country-select" name="country-select">
+      <option value="">Your country..</option>
+      <option value="au">Australia</option>
+      <option value="ca">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+  </div>
+
+  <div>
+    <label for="postal-code">Postal code</label>
+    <input type="text" id="postal-code" name="postal-code" placeholder="Your postal code..">
+  </div>
+
+  <div>
+    <input type="checkbox" id="save_info" name="save_info">
+    <label for="save_info">Save this information for next time</label>
+  </div>
+
+
+  <input type="button" value="Continue">
+
+
+  <footer><a href="https://github.com/MatejaC/devchallenges-checkout-page">Mateja Cimpersak @
+      DevChallenges.io</a></footer>
+
+
+
+
+
+
+
+  <script src="script.js "></script>
 
 </body>
 

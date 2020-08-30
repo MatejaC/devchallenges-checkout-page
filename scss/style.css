@@ -1,0 +1,182 @@
+/* fonts */
+/* colors */
+/* base styles */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+@-o-viewport {
+  width: device-width;
+  zoom: 1;
+}
+
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+.row {
+  position: relative;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
+}
+
+/* mobile */
+.container {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+  -ms-grid-columns: (minmax(15em, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+}
+
+.rectangle-purchase {
+  background: #f2f2f2;
+  border-radius: 12px;
+}
+
+/* -- quantity box -- */
+input,
+textarea {
+  border: 1px solid #eeeeee;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 10px;
+}
+
+input[type="button"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input-group {
+  clear: both;
+  margin: 15px 0;
+  position: relative;
+}
+
+.input-group input[type="button"] {
+  background-color: #eeeeee;
+  min-width: 38px;
+  width: auto;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.input-group .button-minus,
+.input-group .button-plus {
+  font-weight: bold;
+  height: 38px;
+  padding: 0;
+  width: 38px;
+  position: relative;
+}
+
+.input-group .quantity-field {
+  position: relative;
+  height: 38px;
+  left: -6px;
+  text-align: center;
+  width: 62px;
+  display: inline-block;
+  font-size: 13px;
+  margin: 0 0 5px;
+  resize: vertical;
+}
+
+.button-plus {
+  left: -13px;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+}
+
+/* forms */
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+div {
+  padding: 20px;
+}
+
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+input[type="button"] {
+  background-color: #f2994a;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 16px 32px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.55rem;
+  line-height: 1.1rem;
+  color: #a9a9a9;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+footer a:link {
+  text-decoration: none;
+  color: #a9a9a9;
+}
+
+footer a {
+  color: inherit;
+}
+/*# sourceMappingURL=style.css.map */
