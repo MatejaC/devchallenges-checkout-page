@@ -279,11 +279,9 @@ input.qtyminus {
  font-size: 14px;
  line-height: 17px;
  color: $gray1;
- font-weight: 600;
  margin: 0rem 1.5rem 0rem 1.5rem;
 }
 span {
- font-weight: 600;
  float: right;
 }
 
@@ -291,30 +289,105 @@ span {
  font-size: 14px;
  line-height: 17px;
  color: $gray1;
- font-weight: 600;
  margin: 0rem 1.5rem 1.5rem 1.5rem;
 }
-/* forms */
 
-/* input[type="text"],
-select {
- width: 100%;
- padding: 12px 20px;
- margin: 8px 0;
- display: inline-block;
- border: 1px solid #ccc;
- border-radius: 4px;
- box-sizing: border-box;
+/* forms */
+.contact-info,
+.shipping-adress {
+ font-size: 14px;
+ line-height: 17px;
+ color: $gray1;
+ margin: 3rem 0 0rem 0.75rem;
+}
+.forms i {
+ position: absolute;
 }
 
-select {
+.forms {
+ width: 100%;
+ margin: 0 0.75rem 0 0;
+}
+
+.icon {
+ padding: 8px;
+ margin-left: 0.8rem;
+ color: $gray3-border-placeholder-icons;
+}
+.input-container {
+ display: inline-block;
+ font-weight: 600;
+ font-size: 10px;
+ line-height: 12px;
+ color: $gray2-email;
+ transform: rotate(-0.02deg);
+ margin: 1rem 0 0.2rem 0.75rem;
+}
+
+.input-form {
+ display: inline-block;
+ border: 1px solid $gray3-border-placeholder-icons;
+ border-radius: 4px;
+ box-sizing: border-box;
+ width: 349.25px;
+ height: 40.56px;
+ border-radius: 12px;
+ font-size: 12px;
+ line-height: 15px;
+ color: $gray3-border-placeholder-icons;
+ margin: 0rem 0.75rem 0rem 0.75rem;
+ padding-left: 2.4rem;
+}
+.section-country-post {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+}
+.postal-code {
+ display: inline-block;
+ border: 1px solid $gray3-border-placeholder-icons;
+ border-radius: 4px;
+ box-sizing: border-box;
+ width: 162.98px;
+ height: 40.56px;
+ border-radius: 12px;
+ font-size: 12px;
+ line-height: 15px;
+ color: $gray3-border-placeholder-icons;
+ margin: 0rem 0.75rem 0rem 0.75rem;
+ padding-left: 2.4rem;
+}
+
+select.input-container {
  width: 100%;
  padding: 16px 20px;
  border: none;
  border-radius: 4px;
-} */
+}
 
-/* input[type="button"] {
+#country-select {
+ line-height: 15px;
+ color: $gray3-border-placeholder-icons;
+ display: inline-block;
+ border: 1px solid $gray3-border-placeholder-icons;
+ border-radius: 4px;
+ box-sizing: border-box;
+ width: 162.98px;
+ height: 40.56px;
+ border-radius: 12px;
+ font-size: 12px;
+ line-height: 15px;
+ margin-left: 0.75rem;
+ padding-left: 2.4rem;
+}
+
+.country {
+ font-weight: 600;
+ font-size: 10px;
+ line-height: 12px;
+ color: $gray2-email;
+}
+
+input[type="button"].continue {
  background-color: $orange;
  border: none;
  color: white;
@@ -323,7 +396,7 @@ select {
  text-decoration: none;
  cursor: pointer;
  border-radius: 12px;
-} */
+}
 
 footer {
  font-family: $font;

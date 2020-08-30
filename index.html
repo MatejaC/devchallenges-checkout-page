@@ -49,59 +49,65 @@
     <h3 class="total">Total<span>$148.98</span></h3>
 
   </section>
+  <section class="forms">
+    <h4 class="contact-info">Contact infomation</h4>
 
-  <h4>Contact infomation</h4>
-  <div>
-    <label for="e-mail">E-mail</label>
-    <input type="text" id="e-mail" name="e-mail adress" placeholder="Enter your email...">
-  </div>
 
-  <div>
-    <label for="phone">Phone</label>
-    <input type="text" id="phone" name="phone number" placeholder="Enter your phone...">
-  </div>
+    <label class="input-container" for="e-mail">E-mail</label> <br>
+    <i class="material-icons icon md-24">email</i>
+    <input class="input-form" type="text" id="e-mail" name="e-mail adress" placeholder="Enter your email..." required>
 
-  <h4>Shipping address</h4>
 
-  <div>
-    <label for="fullname">Full Name</label>
-    <input type="text" id="fullname" name="fulltname" placeholder="Rodney Cotton">
-  </div>
+    <div>
+      <label class="input-container" for="phone">Phone</label> <br>
+      <i class="material-icons md-24 icon">call</i>
+      <input class="input-form" type="text" id="phone" name="phone number" placeholder="Enter your phone..." required>
+    </div>
 
-  <div>
-    <label for="adress">Adress</label>
-    <input type="text" id="adress" name="adress" placeholder="Your address..">
-  </div>
+    <h4 class="shipping-adress">Shipping address</h4>
 
-  <div>
-    <label for="city">City</label>
-    <input type="text" id="city" name="city" placeholder="Your city..">
-  </div>
+    <div>
+      <label class="input-container" for="fullname">Full Name</label> <br>
 
-  <div>
-    <label for="country">Country</label>
+      <i class="material-icons md-24 icon">account_circle</i>
+      <input class="input-form" type="text" id="fullname" name="fulltname" placeholder="Rodney Cotton" required>
+    </div>
+    <div>
+      <label class="input-container" for="adress">Adress</label> <br>
+      <i class="material-icons md-24 icon">home</i>
+      <input class="input-form" type="text" id="adress" name="adress" placeholder="Your address.." required>
+    </div>
 
-    <select id="country-select" name="country-select">
+    <div>
+      <label class="input-container" for="city">City</label><br>
+
+      <i class="material-icons md-24 icon">location_city</i>
+      <input class="input-form" type="text" id="city" name="city" placeholder="Your city.." required>
+    </div>
+
+
+    <label class="input-container" for="country">Country</label> <br>
+    <i class="material-icons md-24 icon">location_city</i>
+    <select name="country" id="country-select">
       <option value="">Your country..</option>
       <option value="au">Australia</option>
       <option value="ca">Canada</option>
       <option value="usa">USA</option>
     </select>
 
-  </div>
+    <label class="input-container" for="postal-code">Postal code</label> <br>
+    <i class="material-icons md-24 icon">markunread_mailbox</i>
 
-  <div>
-    <label for="postal-code">Postal code</label>
-    <input type="text" id="postal-code" name="postal-code" placeholder="Your postal code..">
-  </div>
-
-  <div>
-    <input type="checkbox" id="save_info" name="save_info">
-    <label for="save_info">Save this information for next time</label>
-  </div>
+    <input class="postal-code" type="text" id="postal-code" name="postal-code" placeholder="Your postal code..">
 
 
-  <input type="button" value="Continue">
+    <div>
+      <input type="checkbox" id="save_info" name="save_info">
+      <label for="save_info">Save this information for next time</label>
+    </div>
+  </section>
+
+  <input class="continue" type="button" value="Continue">
 
 
   <footer><a href="https://github.com/MatejaC/devchallenges-checkout-page">Mateja Cimpersak @
