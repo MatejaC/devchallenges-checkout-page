@@ -380,6 +380,17 @@ span {
   margin: 1rem 0 0.2rem 0.75rem;
 }
 
+.save-info {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: #4f4f4f;
+  -webkit-transform: rotate(-0.02deg);
+          transform: rotate(-0.02deg);
+  margin: 1rem 0 0.2rem 0.75rem;
+}
+
 .input-form {
   display: inline-block;
   border: 1px solid #828282;
@@ -394,13 +405,6 @@ span {
   color: #828282;
   margin: 0rem 0.75rem 0rem 0.75rem;
   padding-left: 2.4rem;
-}
-
-.section-country-post {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
 }
 
 .postal-code {
@@ -426,6 +430,15 @@ select.input-container {
   border-radius: 4px;
 }
 
+.country-and-postal-box {
+  display: inline-block;
+  width: 47.5%;
+}
+
+.country-and-postal-box .cf-medium {
+  width: 93%;
+}
+
 #country-select {
   line-height: 15px;
   color: #828282;
@@ -434,7 +447,7 @@ select.input-container {
   border-radius: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 162.98px;
+  width: 152px;
   height: 40.56px;
   border-radius: 12px;
   font-size: 12px;
@@ -450,6 +463,20 @@ select.input-container {
   color: #4f4f4f;
 }
 
+.checkbox {
+  margin: 1rem -0.5rem 0 0.75rem;
+  border: 1px solid #828282;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.save-info {
+  font-size: 10px;
+  line-height: 12px;
+  color: #4f4f4f;
+}
+
 input[type="button"].continue {
   background-color: #f2994a;
   border: none;
@@ -459,6 +486,7 @@ input[type="button"].continue {
   text-decoration: none;
   cursor: pointer;
   border-radius: 12px;
+  margin: 1rem 0.75rem 4.5rem 14.8rem;
 }
 
 footer {

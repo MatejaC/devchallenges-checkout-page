@@ -101,6 +101,7 @@ html {
  color: $gray-dark;
  margin: 1.9rem 0rem 0.7rem 0rem;
 }
+
 .price1 {
  grid-column: 5 / 6;
  grid-row: 2;
@@ -137,6 +138,7 @@ html {
  height: 55px;
  margin: 1rem 0 0 0;
 }
+
 .qty {
  border-radius: 4px;
  width: 50px;
@@ -148,6 +150,7 @@ html {
  font-weight: 600;
  background-color: $gray6-background-rectangle;
 }
+
 input.qtyplus {
  width: 25px;
  height: 25px;
@@ -160,6 +163,7 @@ input.qtyplus {
  font-size: 1.6rem;
  line-height: 1.5rem;
 }
+
 input.qtyminus {
  font-weight: 600;
  width: 25px;
@@ -196,6 +200,7 @@ input.qtyminus {
  color: $gray-dark;
  margin: 1.9rem 0rem 0.7rem 0rem;
 }
+
 .price2 {
  grid-column: 5 / 6;
  grid-row: 2;
@@ -232,6 +237,7 @@ input.qtyminus {
  height: 55px;
  margin: -4.5rem 0 0 0;
 }
+
 .qty {
  border-radius: 4px;
  width: 50px;
@@ -243,6 +249,7 @@ input.qtyminus {
  font-weight: 600;
  background-color: $gray6-background-rectangle;
 }
+
 input.qtyplus {
  width: 25px;
  height: 25px;
@@ -255,6 +262,7 @@ input.qtyplus {
  font-size: 1.6rem;
  line-height: 1.5rem;
 }
+
 input.qtyminus {
  font-weight: 600;
  width: 25px;
@@ -272,15 +280,18 @@ input.qtyminus {
 .hr1 {
  margin: 3rem 1.5rem 0.5rem 1.5rem;
 }
+
 .hr2 {
  margin: 0.5rem 1.5rem 0.5rem 1.5rem;
 }
+
 .shipping {
  font-size: 14px;
  line-height: 17px;
  color: $gray1;
  margin: 0rem 1.5rem 0rem 1.5rem;
 }
+
 span {
  float: right;
 }
@@ -300,6 +311,7 @@ span {
  color: $gray1;
  margin: 3rem 0 0rem 0.75rem;
 }
+
 .forms i {
  position: absolute;
 }
@@ -314,7 +326,18 @@ span {
  margin-left: 0.8rem;
  color: $gray3-border-placeholder-icons;
 }
+
 .input-container {
+ display: inline-block;
+ font-weight: 600;
+ font-size: 10px;
+ line-height: 12px;
+ color: $gray2-email;
+ transform: rotate(-0.02deg);
+ margin: 1rem 0 0.2rem 0.75rem;
+}
+
+.save-info {
  display: inline-block;
  font-weight: 600;
  font-size: 10px;
@@ -338,10 +361,7 @@ span {
  margin: 0rem 0.75rem 0rem 0.75rem;
  padding-left: 2.4rem;
 }
-.section-country-post {
- display: grid;
- grid-template-columns: 1fr 1fr;
-}
+
 .postal-code {
  display: inline-block;
  border: 1px solid $gray3-border-placeholder-icons;
@@ -364,6 +384,15 @@ select.input-container {
  border-radius: 4px;
 }
 
+.country-and-postal-box {
+ display: inline-block;
+ width: 47.5%;
+}
+
+.country-and-postal-box .cf-medium {
+ width: 93%;
+}
+
 #country-select {
  line-height: 15px;
  color: $gray3-border-placeholder-icons;
@@ -371,7 +400,7 @@ select.input-container {
  border: 1px solid $gray3-border-placeholder-icons;
  border-radius: 4px;
  box-sizing: border-box;
- width: 162.98px;
+ width: 152px;
  height: 40.56px;
  border-radius: 12px;
  font-size: 12px;
@@ -387,6 +416,19 @@ select.input-container {
  color: $gray2-email;
 }
 
+.checkbox {
+ margin: 1rem -0.5rem 0 0.75rem;
+ border: 1px solid $gray3-border-placeholder-icons;
+ box-sizing: border-box;
+ border-radius: 4px;
+}
+
+.save-info {
+ font-size: 10px;
+ line-height: 12px;
+ color: $gray2-email;
+}
+
 input[type="button"].continue {
  background-color: $orange;
  border: none;
@@ -396,6 +438,7 @@ input[type="button"].continue {
  text-decoration: none;
  cursor: pointer;
  border-radius: 12px;
+ margin: 1rem 0.75rem 4.5rem 14.8rem;
 }
 
 footer {

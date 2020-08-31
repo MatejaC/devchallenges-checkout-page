@@ -85,25 +85,26 @@
       <input class="input-form" type="text" id="city" name="city" placeholder="Your city.." required>
     </div>
 
+    <div class="country-and-postal-box">
+      <label class="input-container" for="country">Country</label> <br>
+      <i class="material-icons md-24 icon">location_city</i>
+      <select name="country" id="country-select">
+        <option value="">Your country..</option>
+        <option value="au">Australia</option>
+        <option value="ca">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+    </div>
+    <div class="country-and-postal-box cf-medium">
+      <label class="input-container" for="postal-code">Postal code</label> <br>
+      <i class="material-icons md-24 icon">markunread_mailbox</i>
 
-    <label class="input-container" for="country">Country</label> <br>
-    <i class="material-icons md-24 icon">location_city</i>
-    <select name="country" id="country-select">
-      <option value="">Your country..</option>
-      <option value="au">Australia</option>
-      <option value="ca">Canada</option>
-      <option value="usa">USA</option>
-    </select>
-
-    <label class="input-container" for="postal-code">Postal code</label> <br>
-    <i class="material-icons md-24 icon">markunread_mailbox</i>
-
-    <input class="postal-code" type="text" id="postal-code" name="postal-code" placeholder="Your postal code..">
-
+      <input class="postal-code" type="text" id="postal-code" name="postal-code" placeholder="Your postal code..">
+    </div>
 
     <div>
-      <input type="checkbox" id="save_info" name="save_info">
-      <label for="save_info">Save this information for next time</label>
+      <input class="checkbox" type="checkbox" id="save_info" name="save_info">
+      <label class="save-info" for="save_info">Save this information for next time</label>
     </div>
   </section>
 
