@@ -66,6 +66,7 @@ html {
 
 .checkout {
  grid-column: 1 / 2;
+ grid-row: 1;
  color: $gray-dark;
  font-weight: 600;
  font-size: 24px;
@@ -75,6 +76,7 @@ html {
 
 .rectangle-purchase {
  display: grid;
+ grid-row: 1;
  background: $gray6-background-rectangle;
  border-radius: 12px;
  margin: 0 12px 0 13px;
@@ -220,7 +222,7 @@ input.qtyminus {
  margin: 0rem 0rem 6.5rem 0.7rem;
 }
 
-/* -- quantity box -- */
+/* -- quantity box 2 -- */
 #myform2 {
  grid-column: 5 / 8;
  grid-row: 3;
@@ -337,16 +339,6 @@ span {
  margin: 1rem 0 0.2rem 0.75rem;
 }
 
-.save-info {
- display: inline-block;
- font-weight: 600;
- font-size: 10px;
- line-height: 12px;
- color: $gray2-email;
- transform: rotate(-0.02deg);
- margin: 1rem 0 0.2rem 0.75rem;
-}
-
 .input-form {
  display: inline-block;
  border: 1px solid $gray3-border-placeholder-icons;
@@ -375,6 +367,16 @@ span {
  color: $gray3-border-placeholder-icons;
  margin: 0rem 0.75rem 0rem 0.75rem;
  padding-left: 2.4rem;
+}
+
+.save-info {
+ display: inline-block;
+ font-weight: 600;
+ font-size: 10px;
+ line-height: 12px;
+ color: $gray2-email;
+ transform: rotate(-0.02deg);
+ margin: 1rem 0 0.2rem 0.75rem;
 }
 
 select.input-container {
@@ -457,5 +459,293 @@ footer {
  }
  a {
   color: inherit;
+ }
+}
+/* 
+input:invalid {
+ border: 1px solid $gray3-border-placeholder-icons;
+}
+
+input:invalid:required {
+ border: 1px solid $gray3-border-placeholder-icons;
+}
+
+input:valid:required {
+ border: 1px solid green;
+} */
+
+/* tablets */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+ .container {
+  display: grid;
+  margin: 0 auto;
+  font-family: $font;
+  font-weight: 600;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+ }
+
+ .checkout {
+  grid-row: 1;
+  font-size: 36px;
+  line-height: 44px;
+  margin: 2rem 0 1.2rem 4rem;
+ }
+
+ /* forms */
+ .forms {
+  grid-column: 1 / 5;
+  grid-row: 2;
+  width: 100%;
+  margin: -29.5rem 2rem 0 4rem;
+ }
+
+ .contact-info {
+  grid-column: 1 / 5;
+  grid-row: 3;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 3rem 0 0rem 0.75rem;
+ }
+
+ .shipping-adress {
+  grid-column: 1 / 5;
+  grid-row: 4;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 3rem 0 0rem 0.75rem;
+ }
+
+ .input-container {
+  grid-column: 1 / 5;
+  margin: 1rem 0 0.2rem 0.75rem;
+ }
+
+ .input-form {
+  grid-column: 1 / 5;
+  width: 300px;
+  margin: 0rem 0.75rem 0rem 0.75rem;
+  padding-left: 2.4rem;
+ }
+
+ .country-and-postal-box {
+  display: inline-block;
+  width: 20%;
+ }
+
+ .postal-code {
+  width: 141px;
+ }
+
+ .checkbox {
+  grid-column: 1 / 5;
+ }
+
+ input[type="button"].continue {
+  grid-column: 1 / 5;
+  margin: 1.7rem 0rem 4.5rem 12rem;
+ }
+
+ .rectangle-purchase {
+  grid-row: 2;
+  width: 290px;
+  grid-column: 5 / 11;
+  background: $gray6-background-rectangle;
+  border-radius: 12px;
+  margin: 4rem 0rem 0 26rem;
+ }
+
+ .backbag {
+  grid-column: 1 / 4;
+  grid-row: 1 / 4;
+  width: 110%;
+  margin: 1.5rem 0rem 0rem 1.5rem;
+ }
+
+ .name-bag {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  margin: 1.9rem 0rem 0.7rem 0.6rem;
+ }
+
+ .price1 {
+  font-size: 14px;
+  line-height: 14px;
+  margin: -0.2rem 0rem 0.7rem 0.6rem;
+ }
+
+ .old-price1 {
+  font-size: 11px;
+  line-height: 9px;
+  margin: 0rem 0rem 0rem 0.7rem;
+ }
+
+ #myform {
+  margin: 0 0 0 0.5rem;
+  width: 125px;
+  height: 50px;
+ }
+
+ .shoes {
+  width: 110%;
+  max-width: 100ch;
+  margin: 1.9rem 0rem 1.7rem 1.5rem;
+ }
+
+ .name-shoes {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  margin: 2.2rem 0rem 0.7rem 0.6rem;
+ }
+
+ .price2 {
+  font-size: 14px;
+  line-height: 14px;
+  margin: -0.6rem 0rem 0.7rem 0.6rem;
+ }
+
+ .old-price2 {
+  font-size: 11px;
+  line-height: 9px;
+  margin: -0.4rem 0rem 0rem 0.7rem;
+ }
+
+ #myform2 {
+  margin: 0 0 0 0.5rem;
+  width: 125px;
+  height: 50px;
+ }
+
+ .hr1 {
+  margin: 2rem 1.5rem 0.5rem 1.5rem;
+ }
+}
+
+/* laptops */
+@media screen and (min-device-width: 1024px) and (max-device-width: 1439px) and (-webkit-min-device-pixel-ratio: 1) {
+ .container {
+  display: grid;
+  margin: 0 auto;
+  font-family: $font;
+  font-weight: 600;
+  grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+ }
+
+ .checkout {
+  grid-row: 1;
+  font-size: 36px;
+  line-height: 44px;
+  margin: 4rem 0 1.2rem 4rem;
+ }
+ /* forms */
+ .forms {
+  grid-column: 1 / 5;
+  grid-row: 2;
+  width: 100%;
+  margin: -29.5rem 2rem 0 4rem;
+ }
+ .contact-info {
+  grid-column: 1 / 5;
+  grid-row: 3;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 3rem 0 0rem 0.75rem;
+ }
+
+ .shipping-adress {
+  grid-column: 1 / 5;
+  grid-row: 4;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 3rem 0 0rem 0.75rem;
+ }
+
+ .input-container {
+  grid-column: 1 / 5;
+  margin: 1rem 0 0.2rem 0.75rem;
+ }
+
+ .input-form {
+  grid-column: 1 / 5;
+  width: 300px;
+  margin: 0rem 0.75rem 0rem 0.75rem;
+  padding-left: 2.4rem;
+ }
+ .country-and-postal-box {
+  display: inline-block;
+  width: 20%;
+ }
+ .postal-code {
+  width: 141px;
+ }
+ .checkbox {
+  grid-column: 1 / 5;
+ }
+ input[type="button"].continue {
+  grid-column: 1 / 5;
+  margin: 1.7rem 0rem 4.5rem 12rem;
+ }
+ .rectangle-purchase {
+  grid-row: 2;
+  width: 290px;
+  grid-column: 5 / 11;
+  background: $gray6-background-rectangle;
+  border-radius: 12px;
+  margin: 4rem 0rem 0 26rem;
+ }
+ .backbag {
+  grid-column: 1 / 4;
+  grid-row: 1 / 4;
+  width: 110%;
+  margin: 1.5rem 0rem 0rem 1.5rem;
+ }
+ .name-bag {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  margin: 1.9rem 0rem 0.7rem 0.6rem;
+ }
+
+ .price1 {
+  font-size: 14px;
+  line-height: 14px;
+  margin: -0.2rem 0rem 0.7rem 0.6rem;
+ }
+
+ .old-price1 {
+  font-size: 11px;
+  line-height: 9px;
+  margin: 0rem 0rem 0rem 0.7rem;
+ }
+ #myform {
+  margin: 0 0 0 0.5rem;
+  width: 125px;
+  height: 50px;
+ }
+ .shoes {
+  width: 110%;
+  max-width: 100ch;
+  margin: 1.9rem 0rem 1.7rem 1.5rem;
+ }
+ .name-shoes {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  margin: 2.2rem 0rem 0.7rem 0.6rem;
+ }
+ .price2 {
+  font-size: 14px;
+  line-height: 14px;
+  margin: -0.6rem 0rem 0.7rem 0.6rem;
+ }
+ .old-price2 {
+  font-size: 11px;
+  line-height: 9px;
+  margin: -0.4rem 0rem 0rem 0.7rem;
+ }
+ #myform2 {
+  margin: 0 0 0 0.5rem;
+  width: 125px;
+  height: 50px;
+ }
+ .hr1 {
+  margin: 2rem 1.5rem 0.5rem 1.5rem;
  }
 }

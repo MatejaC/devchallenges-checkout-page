@@ -9,11 +9,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script scr="jquery.js"></script>
   <title>Checkout page</title>
-
 </head>
 
 <body>
-
   <div class="container"></div>
   <h1 class="checkout">Checkout</h1>
 
@@ -26,9 +24,10 @@
 
       <form id="myform" method="POST" action="#">
         <input type="button" value="-" class="qtyminus" field="quantity" />
-        <input type="text" name="quantity" value="0" class="qty" />
+        <input type="number" name="quantity" value="1" class="qty" />
         <input type="button" value="+" class="qtyplus" field="quantity" />
       </form>
+
     </div>
 
     <div class="shoes-section">
@@ -38,7 +37,7 @@
       <h5 class="old-price2">$124.99</h5>
       <form id="myform2" method="POST" action="#">
         <input type="button" value="-" class="qtyminus" field="quantity" />
-        <input type="text" name="quantity2" value=" 0" class="qty">
+        <input type="number" name="quantity2" value="1" class="qty">
         <input type="button" value="+" class="qtyplus" field="quantity" />
       </form>
     </div>
@@ -49,29 +48,30 @@
     <h3 class="total">Total<span>$148.98</span></h3>
 
   </section>
+
   <section class="forms">
     <h4 class="contact-info">Contact infomation</h4>
 
-
     <label class="input-container" for="e-mail">E-mail</label> <br>
     <i class="material-icons icon md-24">email</i>
-    <input class="input-form" type="text" id="e-mail" name="e-mail adress" placeholder="Enter your email..." required>
-
+    <input class="input-form" type="email" id="email" name="email" pattern=".+@globex.com" size="30"
+      placeholder="Enter your email..." required>
 
     <div>
       <label class="input-container" for="phone">Phone</label> <br>
       <i class="material-icons md-24 icon">call</i>
-      <input class="input-form" type="text" id="phone" name="phone number" placeholder="Enter your phone..." required>
+      <input class="input-form" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        placeholder="Enter your phone..." required>
     </div>
 
     <h4 class="shipping-adress">Shipping address</h4>
 
     <div>
       <label class="input-container" for="fullname">Full Name</label> <br>
-
       <i class="material-icons md-24 icon">account_circle</i>
       <input class="input-form" type="text" id="fullname" name="fulltname" placeholder="Rodney Cotton" required>
     </div>
+
     <div>
       <label class="input-container" for="adress">Adress</label> <br>
       <i class="material-icons md-24 icon">home</i>
@@ -80,7 +80,6 @@
 
     <div>
       <label class="input-container" for="city">City</label><br>
-
       <i class="material-icons md-24 icon">location_city</i>
       <input class="input-form" type="text" id="city" name="city" placeholder="Your city.." required>
     </div>
@@ -88,32 +87,30 @@
     <div class="country-and-postal-box">
       <label class="input-container" for="country">Country</label> <br>
       <i class="material-icons md-24 icon">location_city</i>
-      <select name="country" id="country-select">
-        <option value="">Your country..</option>
+      <select required aria-required="true" name="country" id="country-select">
+        <option selected="" value="Default">Your country..</option>
         <option value="au">Australia</option>
         <option value="ca">Canada</option>
         <option value="usa">USA</option>
       </select>
     </div>
+
     <div class="country-and-postal-box cf-medium">
       <label class="input-container" for="postal-code">Postal code</label> <br>
       <i class="material-icons md-24 icon">markunread_mailbox</i>
-
-      <input class="postal-code" type="text" id="postal-code" name="postal-code" placeholder="Your postal code..">
+      <input class="postal-code" type="number" id="postal-code" name="postal-code" placeholder="Your postal code.."
+        required>
     </div>
 
     <div>
-      <input class="checkbox" type="checkbox" id="save_info" name="save_info">
+      <input class="checkbox" type="checkbox" id="save_info" name="save_info" required>
       <label class="save-info" for="save_info">Save this information for next time</label>
     </div>
+
+    <input class="continue" type="button" value="Continue">
   </section>
-
-  <input class="continue" type="button" value="Continue">
-
-
   <footer><a href="https://github.com/MatejaC/devchallenges-checkout-page">Mateja Cimpersak @
       DevChallenges.io</a></footer>
-
 
   <script scr="jquery.js"></script>
 
