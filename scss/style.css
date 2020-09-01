@@ -6,7 +6,7 @@
 *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -40,6 +40,7 @@
 
 body,
 html {
+  width: 100%;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   background-color: #ffffff;
@@ -47,9 +48,9 @@ html {
 
 /* mobile */
 .container {
+  margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   -ms-grid-columns: (minmax(10em, 1fr))[auto-fit];
@@ -64,8 +65,8 @@ html {
   grid-row: 1;
   color: #4e5150;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
   margin: 2rem 0 1.2rem 1.12rem;
 }
 
@@ -75,8 +76,8 @@ html {
   -ms-grid-row: 1;
   grid-row: 1;
   background: #f2f2f2;
-  border-radius: 12px;
-  margin: 0 12px 0 13px;
+  border-radius: 0.75rem;
+  margin: 0 0.75rem 0 0.8rem;
 }
 
 .backbag-section {
@@ -118,8 +119,8 @@ html {
   -ms-grid-row: 2;
   grid-row: 2;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 0.85rem;
+  line-height: 1.05rem;
   color: #f2994a;
   margin: -0.2rem 0rem 0.7rem 0rem;
 }
@@ -130,8 +131,8 @@ html {
   grid-column: 6 / 7;
   -ms-grid-row: 2;
   grid-row: 2;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
   margin: 0rem 0rem 0rem 0.7rem;
@@ -154,7 +155,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   width: 138px;
   height: 55px;
   margin: 1rem 0 0 0;
@@ -252,8 +253,8 @@ input.qtyminus {
   grid-column: 6 / 7;
   -ms-grid-row: 2;
   grid-row: 2;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 0.625;
+  line-height: 0.75rem;
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
   margin: 0rem 0rem 6.5rem 0.7rem;
@@ -276,7 +277,7 @@ input.qtyminus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   width: 138px;
   height: 55px;
   margin: -4.5rem 0 0 0;
@@ -376,8 +377,8 @@ span {
 .input-container {
   display: inline-block;
   font-weight: 600;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
   color: #4f4f4f;
   -webkit-transform: rotate(-0.02deg);
           transform: rotate(-0.02deg);
@@ -392,8 +393,8 @@ span {
           box-sizing: border-box;
   width: 340.25px;
   height: 40.56px;
-  border-radius: 12px;
-  font-size: 12px;
+  border-radius: 0.75rem;
+  font-size: 0.75rem;
   line-height: 15px;
   color: #828282;
   margin: 0rem 0.75rem 0rem 0.75rem;
@@ -408,8 +409,8 @@ span {
           box-sizing: border-box;
   width: 162.98px;
   height: 40.56px;
-  border-radius: 12px;
-  font-size: 12px;
+  border-radius: 0.75rem;
+  font-size: 0.75rem;
   line-height: 15px;
   color: #828282;
   margin: 0rem 0rem 0rem 0rem;
@@ -419,8 +420,8 @@ span {
 .save-info {
   display: inline-block;
   font-weight: 600;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
   color: #4f4f4f;
   -webkit-transform: rotate(-0.02deg);
           transform: rotate(-0.02deg);
@@ -453,8 +454,8 @@ select.input-container {
           box-sizing: border-box;
   width: 152px;
   height: 40.56px;
-  border-radius: 12px;
-  font-size: 12px;
+  border-radius: 0.75rem;
+  font-size: 0.75rem;
   line-height: 15px;
   margin-left: 0.75rem;
   padding-left: 2.4rem;
@@ -462,8 +463,8 @@ select.input-container {
 
 .country {
   font-weight: 600;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
   color: #4f4f4f;
 }
 
@@ -476,8 +477,8 @@ select.input-container {
 }
 
 .save-info {
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
   color: #4f4f4f;
 }
 
@@ -489,7 +490,7 @@ input[type="button"].continue {
   padding: 16px 32px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   margin: 1rem 0.75rem 4.5rem 14rem;
 }
 
@@ -516,18 +517,6 @@ footer a {
   color: inherit;
 }
 
-/* 
-input:invalid {
- border: 1px solid $gray3-border-placeholder-icons;
-}
-
-input:invalid:required {
- border: 1px solid $gray3-border-placeholder-icons;
-}
-
-input:valid:required {
- border: 1px solid green;
-} */
 /* tablets */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
   .container {
@@ -611,12 +600,12 @@ input:valid:required {
   .rectangle-purchase {
     -ms-grid-row: 2;
     grid-row: 2;
-    width: 290px;
+    width: 18.125rem;
     -ms-grid-column: 5;
     -ms-grid-column-span: 6;
     grid-column: 5 / 11;
     background: #f2f2f2;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     margin: 4rem 0rem 0 26rem;
   }
   .backbag {
@@ -635,19 +624,19 @@ input:valid:required {
     margin: 1.9rem 0rem 0.7rem 0.6rem;
   }
   .price1 {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
     margin: -0.2rem 0rem 0.7rem 0.6rem;
   }
   .old-price1 {
-    font-size: 11px;
+    font-size: 0.687rem;
     line-height: 9px;
     margin: 0rem 0rem 0rem 0.7rem;
   }
   #myform {
     margin: 0 0 0 0.5rem;
-    width: 125px;
-    height: 50px;
+    width: 7.813rem;
+    height: 3.125rem;
   }
   .shoes {
     width: 110%;
@@ -660,19 +649,19 @@ input:valid:required {
     margin: 2.2rem 0rem 0.7rem 0.6rem;
   }
   .price2 {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
     margin: -0.6rem 0rem 0.7rem 0.6rem;
   }
   .old-price2 {
-    font-size: 11px;
-    line-height: 9px;
+    font-size: 0.687rem;
+    line-height: 0.562rem;
     margin: -0.4rem 0rem 0rem 0.7rem;
   }
   #myform2 {
     margin: 0 0 0 0.5rem;
-    width: 125px;
-    height: 50px;
+    width: 7.813rem;
+    height: 3.125rem;
   }
   .hr1 {
     margin: 2rem 1.5rem 0.5rem 1.5rem;
@@ -691,8 +680,8 @@ input:valid:required {
         grid-template-columns: repeat(auto-fit, minmax(40em, 1fr));
   }
   .checkout {
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
     margin: 4.5rem 0 1.2rem 12rem;
   }
   /* forms */
@@ -701,24 +690,24 @@ input:valid:required {
     margin: -36rem 2rem 0 12rem;
   }
   .contact-info {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
     margin: 3rem 0 0rem 0.75rem;
   }
   .shipping-adress {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
     margin: 3rem 0 0rem 0.75rem;
   }
   .input-container {
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 0.75rem;
+    line-height: 0.9rem;
     margin: 1rem 0 0.2rem 0.75rem;
   }
   .input-form {
-    width: 330px;
-    font-size: 16px;
-    line-height: 17px;
+    width: 20.6rem;
+    font-size: 1rem;
+    line-height: 1.1rem;
     margin: 0rem 0.75rem 0rem 0.75rem;
     padding-left: 2.4rem;
   }
@@ -727,13 +716,13 @@ input:valid:required {
   }
   #country-select {
     width: 160px;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
   }
   .postal-code {
     width: 160px;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
   }
   .checkbox {
     -ms-grid-column: 1;
@@ -746,7 +735,7 @@ input:valid:required {
   .rectangle-purchase {
     width: 35%;
     background: #f2f2f2;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     margin: 4rem 0rem 0 35rem;
   }
   .backbag {
@@ -759,19 +748,19 @@ input:valid:required {
     margin: 1.9rem 0rem 0.7rem 0.6rem;
   }
   .price1 {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
     margin: -0.2rem 0rem 0.7rem 0.6rem;
   }
   .old-price1 {
-    font-size: 11px;
-    line-height: 9px;
+    font-size: 0.67rem;
+    line-height: 0.56rem;
     margin: 0rem 0rem 0rem 0.7rem;
   }
   #myform {
     margin: 0 0 0 0.5rem;
-    width: 125px;
-    height: 50px;
+    width: 7.81rem;
+    height: 3.125rem;
   }
   .shoes {
     width: 110%;
@@ -784,19 +773,19 @@ input:valid:required {
     margin: 2.2rem 0rem 0.7rem 0.6rem;
   }
   .price2 {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
     margin: -0.6rem 0rem 0.7rem 0.6rem;
   }
   .old-price2 {
-    font-size: 11px;
-    line-height: 9px;
+    font-size: 0.67rem;
+    line-height: 0.56rem;
     margin: -0.4rem 0rem 0rem 0.7rem;
   }
   #myform2 {
     margin: 0 0 0 0.5rem;
-    width: 125px;
-    height: 50px;
+    width: 7.8rem;
+    height: 3.1rem;
   }
   .hr1 {
     margin: 2rem 1.5rem 0.5rem 1.5rem;
@@ -810,90 +799,91 @@ input:valid:required {
     margin: 0 auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    -ms-grid-columns: (minmax(40em, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(40em, 1fr));
+    -ms-grid-columns: (minmax(10em, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
   }
   .checkout {
-    font-size: 36px;
-    line-height: 44px;
-    margin: 4.5rem 0 1.2rem 12rem;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    margin: 4.5rem 0 1.2rem 17rem;
   }
   /* forms */
   .forms {
     width: 100%;
-    margin: -36rem 2rem 0 12rem;
+    margin: -32rem 2rem 0 17rem;
   }
   .contact-info {
-    font-size: 18px;
-    line-height: 22px;
-    margin: 3rem 0 0rem 0.75rem;
+    font-size: 1.1rem;
+    line-height: 1.34rem;
+    margin: 3rem 0 0.2rem 0.75rem;
   }
   .shipping-adress {
-    font-size: 18px;
-    line-height: 22px;
-    margin: 3rem 0 0rem 0.75rem;
+    font-size: 1.1rem;
+    line-height: 1.34rem;
+    margin: 3rem 0 0.2rem 0.75rem;
   }
   .input-container {
-    font-size: 12px;
-    line-height: 15px;
+    width: 120%;
+    font-size: 0.75rem;
+    line-height: 0.9rem;
     margin: 1rem 0 0.2rem 0.75rem;
   }
   .input-form {
-    width: 330px;
-    font-size: 16px;
-    line-height: 17px;
+    width: 465px;
+    font-size: 1rem;
+    line-height: 1.1rem;
     margin: 0rem 0.75rem 0rem 0.75rem;
     padding-left: 2.4rem;
   }
   .country-and-postal-box {
     display: inline-block;
-    width: 16%;
+    width: 17.5%;
   }
   #country-select {
-    width: 160px;
-    font-size: 14px;
-    line-height: 14px;
+    width: 217px;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
   }
   .postal-code {
-    width: 160px;
-    font-size: 14px;
-    line-height: 14px;
+    width: 13.6rem;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+    margin-left: 0rem;
   }
-  .checkbox {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-column: 1 / 5;
+  .save-info {
+    font-size: 0.75rem;
+    line-height: 0.9rem;
   }
   input[type="button"].continue {
-    margin: 2rem 0rem 8rem 14rem;
+    margin: 2rem 0rem 11rem 22rem;
   }
   .rectangle-purchase {
-    width: 35%;
-    margin: 4rem 0rem 0 35rem;
+    width: 24%;
+    margin: 4rem 0rem 0 50rem;
   }
   .backbag {
     width: 110%;
     margin: 1.5rem 0rem 0rem 1.5rem;
   }
   .name-bag {
-    font-size: 0.9rem;
-    line-height: 1rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
     margin: 1.9rem 0rem 0.7rem 0.6rem;
   }
   .price1 {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     margin: -0.2rem 0rem 0.7rem 0.6rem;
   }
   .old-price1 {
-    font-size: 11px;
-    line-height: 9px;
+    font-size: 0.75rem;
+    line-height: 0.8rem;
     margin: 0rem 0rem 0rem 0.7rem;
   }
   #myform {
-    margin: 0 0 0 0.5rem;
-    width: 125px;
-    height: 50px;
+    margin: 0.9rem 0 0 0.5rem;
+    width: 8.3rem;
+    height: 3.25rem;
   }
   .shoes {
     width: 110%;
@@ -901,27 +891,31 @@ input:valid:required {
     margin: 1.9rem 0rem 1.7rem 1.5rem;
   }
   .name-shoes {
-    font-size: 0.9rem;
-    line-height: 1rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
     margin: 2.2rem 0rem 0.7rem 0.6rem;
   }
   .price2 {
-    font-size: 14px;
-    line-height: 14px;
-    margin: -0.6rem 0rem 0.7rem 0.6rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin: -1.6rem 0rem 0.7rem 0.6rem;
   }
   .old-price2 {
-    font-size: 11px;
-    line-height: 9px;
-    margin: -0.4rem 0rem 0rem 0.7rem;
+    font-size: 0.75rem;
+    line-height: 0.8rem;
+    margin: -1.35rem 0rem 0rem 0.7rem;
   }
   #myform2 {
-    margin: 0 0 0 0.5rem;
-    width: 125px;
-    height: 50px;
+    margin: -0.5rem 0 0 0.5rem;
+    width: 8.3rem;
+    height: 3.25rem;
   }
   .hr1 {
     margin: 2rem 1.5rem 0.5rem 1.5rem;
+  }
+  footer {
+    font-size: 0.875rem;
+    line-height: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

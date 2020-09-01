@@ -14,10 +14,6 @@ User story: When I click submit button or press enter, I can see a warning if va
 User story: When I click submit button or press enter, I can see a successful alert if validation succeeds
 ...
 
-## resources
-
-library: Buttons Plus & Minus, how to increment or decrement a form field - courtesy of- Jose SAYAGO <http://jsfiddle.net/laelitenetwork/puJ6G/>
-
 ### my solution
 
 <https://matejac.github.io/devchallenges-checkout-page/>>
