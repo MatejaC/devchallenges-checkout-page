@@ -1,921 +1,160 @@
 /* fonts */
 /* colors */
-/* base styles */
 *,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 0 auto;
   padding: 0;
 }
 
-.clearfix {
-  zoom: 1;
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  height: 100vh;
+  padding: 1rem 1rem;
+  margin: 0;
 }
 
-@-o-viewport {
-  width: device-width;
-  zoom: 1;
-}
-
-@viewport {
-  width: device-width;
-  zoom: 1;
-}
-
-@-ms-viewport {
-  width: device-width;
-}
-
-.row {
-  position: relative;
-}
-
-.row::after {
-  content: "";
+img {
   display: block;
-  clear: both;
 }
 
-body,
-html {
-  width: 100%;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  background-color: #ffffff;
+p,
+span,
+h1,
+h3 {
+  color: #333333;
 }
 
-/* mobile */
-.container {
-  margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  -ms-grid-columns: (minmax(10em, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
-}
-
-.checkout {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
-  -ms-grid-row: 1;
-  grid-row: 1;
-  color: #4e5150;
-  font-weight: 600;
+h1 {
   font-size: 1.5rem;
   line-height: 1.8rem;
-  margin: 2rem 0 1.2rem 1.12rem;
+  color: #4e5150;
+  margin-bottom: 1rem;
 }
 
-.rectangle-purchase {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 1;
-  grid-row: 1;
+.purchase__box {
   background: #f2f2f2;
-  border-radius: 0.75rem;
-  margin: 0 0.75rem 0 0.8rem;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  -webkit-border-radius: 0.7rem;
+  -moz-border-radius: 0.7rem;
+  -ms-border-radius: 0.7rem;
+  -o-border-radius: 0.7rem;
 }
 
-.backbag-section {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[8];
-      grid-template-columns: repeat(8, 1fr);
+.purchase__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2rem;
 }
 
-.backbag {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1 / 4;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  grid-row: 1 / 4;
+.item__image {
+  width: 8rem;
+  border-radius: 10px;
+  margin-right: 1rem;
+  overflow: hidden;
+}
+
+.item__image img {
   width: 100%;
-  max-width: 100ch;
-  border-radius: 0.8rem;
-  margin: 1.5rem 0rem 0rem 1.5rem;
 }
 
-.name-bag {
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 4;
-  grid-column: 5 / 9;
-  -ms-grid-row: 1;
-  grid-row: 1;
+.item__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.item__name {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
   font-size: 0.75rem;
-  line-height: 0.8rem;
+  line-height: 1rem;
   color: #4e5150;
-  margin: 1.9rem 0rem 0.7rem 0rem;
 }
 
-.price1 {
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 1;
-  grid-column: 5 / 6;
-  -ms-grid-row: 2;
-  grid-row: 2;
-  font-weight: 600;
-  font-size: 0.85rem;
-  line-height: 1.05rem;
-  color: #f2994a;
-  margin: -0.2rem 0rem 0.7rem 0rem;
-}
-
-.old-price1 {
-  -ms-grid-column: 6;
-  -ms-grid-column-span: 1;
-  grid-column: 6 / 7;
-  -ms-grid-row: 2;
-  grid-row: 2;
-  font-size: 0.625rem;
-  line-height: 0.75rem;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
-  margin: 0rem 0rem 0rem 0.7rem;
-}
-
-/* -- quantity box -- */
-#myform {
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 3;
-  grid-column: 5 / 8;
-  -ms-grid-row: 3;
-  grid-row: 3;
-  text-align: center;
-  padding: 0.8rem 0 0 0rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  border: 1px solid #828282;
-  background-color: #f2f2f2;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 0.75rem;
-  width: 138px;
-  height: 55px;
-  margin: 1rem 0 0 0;
-}
-
-.qty {
-  border-radius: 4px;
-  width: 50px;
-  height: 25px;
-  text-align: center;
-  border: none;
-  font-size: 1.1rem;
-  color: #333333;
-  font-weight: 600;
-  background-color: #f2f2f2;
-}
-
-input.qtyplus {
-  width: 25px;
-  height: 25px;
-  border-radius: 4px;
-  border: none;
-  background-color: #e0e0e0;
-  color: #828282;
-  text-align: center;
-  font-weight: 600;
-  font-size: 1.6rem;
-  line-height: 1.5rem;
-}
-
-input.qtyminus {
-  font-weight: 600;
-  width: 25px;
-  height: 25px;
-  border: none;
-  border-radius: 4px;
-  background-color: #e0e0e0;
-  color: #828282;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.6rem;
-  line-height: 1.5rem;
-}
-
-.shoes-section {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[8];
-      grid-template-columns: repeat(8, 1fr);
-}
-
-.shoes {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1 / 4;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  grid-row: 1 / 4;
-  width: 100%;
-  max-width: 100ch;
-  border-radius: 0.8rem;
-  margin: 1.5rem 0rem 1.7rem 1.5rem;
-}
-
-.name-shoes {
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 4;
-  grid-column: 5 / 9;
-  -ms-grid-row: 1;
-  grid-row: 1;
+.item__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   font-size: 0.75rem;
-  line-height: 0.8rem;
+  margin-top: -.6rem;
+}
+
+.item__price--sale {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  color: #f2994a;
+}
+
+.item__price p {
   color: #4e5150;
-  margin: 1.9rem 0rem 0.7rem 0rem;
+  text-decoration: line-through;
+  margin: .1rem 0 0 0;
 }
 
-.price2 {
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 1;
-  grid-column: 5 / 6;
-  -ms-grid-row: 2;
-  grid-row: 2;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  color: #f2994a;
-  margin: -0.2rem 0rem 0.7rem 0rem;
-}
-
-.old-price2 {
-  -ms-grid-column: 6;
-  -ms-grid-column-span: 1;
-  grid-column: 6 / 7;
-  -ms-grid-row: 2;
-  grid-row: 2;
-  font-size: 0.625;
-  line-height: 0.75rem;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
-  margin: 0rem 0rem 6.5rem 0.7rem;
-}
-
-/* -- quantity box 2 -- */
-#myform2 {
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 3;
-  grid-column: 5 / 8;
-  -ms-grid-row: 3;
-  grid-row: 3;
-  text-align: center;
-  padding: 0.8rem 0 0 0rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  border: 1px solid #828282;
-  background-color: #f2f2f2;
-  justify-items: center;
+.item__count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 0.75rem;
-  width: 138px;
-  height: 55px;
-  margin: -4.5rem 0 0 0;
+  border: 1px solid #828282;
+  padding: 0rem 0.7rem;
+  border-radius: 10px;
 }
 
-.qty {
-  border-radius: 4px;
-  width: 50px;
-  height: 25px;
-  text-align: center;
-  border: none;
-  font-size: 1.1rem;
-  color: #333333;
-  font-weight: 600;
-  background-color: #f2f2f2;
-}
-
-input.qtyplus {
-  width: 25px;
-  height: 25px;
-  border-radius: 4px;
-  border: none;
+.item__remove,
+.item__add {
   background-color: #e0e0e0;
-  color: #828282;
-  text-align: center;
-  font-weight: 600;
-  font-size: 1.6rem;
-  line-height: 1.5rem;
+  border-radius: 3px;
 }
 
-input.qtyminus {
-  font-weight: 600;
-  width: 25px;
-  height: 25px;
-  border: none;
-  border-radius: 4px;
-  background-color: #e0e0e0;
-  color: #828282;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.6rem;
-  line-height: 1.5rem;
+.item__quantity {
+  margin: 0 auto;
 }
 
-.hr1 {
-  margin: 3rem 1.5rem 0.5rem 1.5rem;
+.purchase__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 4rem;
 }
 
-.hr2 {
-  margin: 0.5rem 1.5rem 0.5rem 1.5rem;
+.shipping__price,
+.total__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.75rem 0;
+  border-top: 1px solid #828282;
 }
 
-.shipping {
-  font-size: 14px;
-  line-height: 17px;
-  color: #333333;
-  margin: 0rem 1.5rem 0rem 1.5rem;
-}
-
-span {
-  float: right;
-}
-
-.total {
-  font-size: 14px;
-  line-height: 17px;
-  color: #333333;
-  margin: 0rem 1.5rem 1.5rem 1.5rem;
-}
-
-/* forms */
-.contact-info,
-.shipping-adress {
-  font-size: 14px;
-  line-height: 17px;
-  color: #333333;
-  margin: 3rem 0 0rem 0.75rem;
-}
-
-.forms i {
-  position: absolute;
-}
-
-.forms {
-  width: 100%;
-  margin: 0 0.75rem 0 0;
-}
-
-.icon {
-  padding: 8px;
-  margin-left: 0.8rem;
-  color: #828282;
-}
-
-.input-container {
-  display: inline-block;
-  font-weight: 600;
-  font-size: 0.625rem;
-  line-height: 0.75rem;
-  color: #4f4f4f;
-  -webkit-transform: rotate(-0.02deg);
-          transform: rotate(-0.02deg);
-  margin: 1rem 0 0.2rem 0.75rem;
-}
-
-.input-form {
-  display: inline-block;
-  border: 1px solid #828282;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 340.25px;
-  height: 40.56px;
-  border-radius: 0.75rem;
-  font-size: 0.75rem;
-  line-height: 15px;
-  color: #828282;
-  margin: 0rem 0.75rem 0rem 0.75rem;
-  padding-left: 2.4rem;
-}
-
-.postal-code {
-  display: inline-block;
-  border: 1px solid #828282;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 162.98px;
-  height: 40.56px;
-  border-radius: 0.75rem;
-  font-size: 0.75rem;
-  line-height: 15px;
-  color: #828282;
-  margin: 0rem 0rem 0rem 0rem;
-  padding-left: 3rem;
-}
-
-.save-info {
-  display: inline-block;
-  font-weight: 600;
-  font-size: 0.625rem;
-  line-height: 0.75rem;
-  color: #4f4f4f;
-  -webkit-transform: rotate(-0.02deg);
-          transform: rotate(-0.02deg);
-  margin: 1rem 0 0.2rem 0.75rem;
-}
-
-select.input-container {
-  width: 100%;
-  padding: 16px 20px;
-  border: none;
-  border-radius: 4px;
-}
-
-.country-and-postal-box {
-  display: inline-block;
-  width: 48.5%;
-}
-
-.country-and-postal-box .cf-medium {
-  width: 93%;
-}
-
-#country-select {
-  line-height: 15px;
-  color: #828282;
-  display: inline-block;
-  border: 1px solid #828282;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 152px;
-  height: 40.56px;
-  border-radius: 0.75rem;
-  font-size: 0.75rem;
-  line-height: 15px;
-  margin-left: 0.75rem;
-  padding-left: 2.4rem;
-}
-
-.country {
-  font-weight: 600;
-  font-size: 0.625rem;
-  line-height: 0.75rem;
-  color: #4f4f4f;
-}
-
-.checkbox {
-  margin: 1rem -0.5rem 0 0.75rem;
-  border: 1px solid #828282;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.save-info {
-  font-size: 0.625rem;
-  line-height: 0.75rem;
-  color: #4f4f4f;
-}
-
-input[type="button"].continue {
-  background-color: #f2994a;
-  border: none;
-  color: white;
-  font-weight: 600;
-  padding: 16px 32px;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 0.75rem;
-  margin: 1rem 0.75rem 4.5rem 14rem;
-}
-
-footer {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 0.55rem;
-  line-height: 1.1rem;
-  color: #a9a9a9;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 0.8rem;
-}
-
-footer a:link {
-  text-decoration: none;
-  color: #a9a9a9;
-}
-
-footer a {
-  color: inherit;
-}
-
-/* tablets */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
-  .container {
-    display: -ms-grid;
-    display: grid;
-    margin: 0 auto;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    -ms-grid-columns: (minmax(20em, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-  }
-  .checkout {
-    -ms-grid-row: 1;
-    grid-row: 1;
-    font-size: 36px;
-    line-height: 44px;
-    margin: 2rem 0 1.2rem 4rem;
-  }
-  /* forms */
-  .forms {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-column: 1 / 5;
-    -ms-grid-row: 2;
-    grid-row: 2;
-    width: 100%;
-    margin: -29.5rem 2rem 0 4rem;
-  }
-  .contact-info {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-column: 1 / 5;
-    -ms-grid-row: 3;
-    grid-row: 3;
-    font-size: 14px;
-    line-height: 17px;
-    margin: 3rem 0 0rem 0.75rem;
-  }
-  .shipping-adress {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-column: 1 / 5;
-    -ms-grid-row: 4;
-    grid-row: 4;
-    font-size: 14px;
-    line-height: 17px;
-    margin: 3rem 0 0rem 0.75rem;
-  }
-  .input-container {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-column: 1 / 5;
-    margin: 1rem 0 0.2rem 0.75rem;
-  }
-  .input-form {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-column: 1 / 5;
-    width: 300px;
-    margin: 0rem 0.75rem 0rem 0.75rem;
-    padding-left: 2.4rem;
-  }
-  .country-and-postal-box {
-    display: inline-block;
-    width: 22%;
-  }
-  .postal-code {
-    width: 141px;
-  }
-  .checkbox {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-column: 1 / 5;
-  }
-  input[type="button"].continue {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-column: 1 / 5;
-    margin: 1.7rem 0rem 4.5rem 12rem;
-  }
-  .rectangle-purchase {
-    -ms-grid-row: 2;
-    grid-row: 2;
-    width: 18.125rem;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 6;
-    grid-column: 5 / 11;
-    background: #f2f2f2;
-    border-radius: 0.75rem;
-    margin: 4rem 0rem 0 26rem;
-  }
-  .backbag {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-column: 1 / 4;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 3;
-    grid-row: 1 / 4;
-    width: 110%;
-    margin: 1.5rem 0rem 0rem 1.5rem;
-  }
-  .name-bag {
-    font-size: 0.9rem;
-    line-height: 1rem;
-    margin: 1.9rem 0rem 0.7rem 0.6rem;
-  }
-  .price1 {
-    font-size: 0.75rem;
-    line-height: 0.75rem;
-    margin: -0.2rem 0rem 0.7rem 0.6rem;
-  }
-  .old-price1 {
-    font-size: 0.687rem;
-    line-height: 9px;
-    margin: 0rem 0rem 0rem 0.7rem;
-  }
-  #myform {
-    margin: 0 0 0 0.5rem;
-    width: 7.813rem;
-    height: 3.125rem;
-  }
-  .shoes {
-    width: 110%;
-    max-width: 100ch;
-    margin: 1.9rem 0rem 1.7rem 1.5rem;
-  }
-  .name-shoes {
-    font-size: 0.9rem;
-    line-height: 1rem;
-    margin: 2.2rem 0rem 0.7rem 0.6rem;
-  }
-  .price2 {
-    font-size: 0.75rem;
-    line-height: 0.75rem;
-    margin: -0.6rem 0rem 0.7rem 0.6rem;
-  }
-  .old-price2 {
-    font-size: 0.687rem;
-    line-height: 0.562rem;
-    margin: -0.4rem 0rem 0rem 0.7rem;
-  }
-  #myform2 {
-    margin: 0 0 0 0.5rem;
-    width: 7.813rem;
-    height: 3.125rem;
-  }
-  .hr1 {
-    margin: 2rem 1.5rem 0.5rem 1.5rem;
-  }
-}
-
-/* laptops */
-@media screen and (min-device-width: 1024px) and (max-device-width: 1439px) and (-webkit-min-device-pixel-ratio: 1) {
-  .container {
-    display: -ms-grid;
-    display: grid;
-    margin: 0 auto;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    -ms-grid-columns: (minmax(40em, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(40em, 1fr));
-  }
-  .checkout {
-    font-size: 2.25rem;
-    line-height: 2.75rem;
-    margin: 4.5rem 0 1.2rem 12rem;
-  }
-  /* forms */
-  .forms {
-    width: 100%;
-    margin: -36rem 2rem 0 12rem;
-  }
-  .contact-info {
-    font-size: 1.125rem;
-    line-height: 1.375rem;
-    margin: 3rem 0 0rem 0.75rem;
-  }
-  .shipping-adress {
-    font-size: 1.125rem;
-    line-height: 1.375rem;
-    margin: 3rem 0 0rem 0.75rem;
-  }
-  .input-container {
-    font-size: 0.75rem;
-    line-height: 0.9rem;
-    margin: 1rem 0 0.2rem 0.75rem;
-  }
-  .input-form {
-    width: 20.6rem;
-    font-size: 1rem;
-    line-height: 1.1rem;
-    margin: 0rem 0.75rem 0rem 0.75rem;
-    padding-left: 2.4rem;
-  }
-  .country-and-postal-box {
-    width: 16%;
-  }
-  #country-select {
-    width: 160px;
-    font-size: 0.875rem;
-    line-height: 0.875rem;
-  }
-  .postal-code {
-    width: 160px;
-    font-size: 0.875rem;
-    line-height: 0.875rem;
-  }
-  .checkbox {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-column: 1 / 5;
-  }
-  input[type="button"].continue {
-    margin: 2rem 0rem 8rem 14rem;
-  }
-  .rectangle-purchase {
-    width: 35%;
-    background: #f2f2f2;
-    border-radius: 0.75rem;
-    margin: 4rem 0rem 0 35rem;
-  }
-  .backbag {
-    width: 110%;
-    margin: 1.5rem 0rem 0rem 1.5rem;
-  }
-  .name-bag {
-    font-size: 0.9rem;
-    line-height: 1rem;
-    margin: 1.9rem 0rem 0.7rem 0.6rem;
-  }
-  .price1 {
-    font-size: 0.875rem;
-    line-height: 0.875rem;
-    margin: -0.2rem 0rem 0.7rem 0.6rem;
-  }
-  .old-price1 {
-    font-size: 0.67rem;
-    line-height: 0.56rem;
-    margin: 0rem 0rem 0rem 0.7rem;
-  }
-  #myform {
-    margin: 0 0 0 0.5rem;
-    width: 7.81rem;
-    height: 3.125rem;
-  }
-  .shoes {
-    width: 110%;
-    max-width: 100ch;
-    margin: 1.9rem 0rem 1.7rem 1.5rem;
-  }
-  .name-shoes {
-    font-size: 0.9rem;
-    line-height: 1rem;
-    margin: 2.2rem 0rem 0.7rem 0.6rem;
-  }
-  .price2 {
-    font-size: 0.875rem;
-    line-height: 0.875rem;
-    margin: -0.6rem 0rem 0.7rem 0.6rem;
-  }
-  .old-price2 {
-    font-size: 0.67rem;
-    line-height: 0.56rem;
-    margin: -0.4rem 0rem 0rem 0.7rem;
-  }
-  #myform2 {
-    margin: 0 0 0 0.5rem;
-    width: 7.8rem;
-    height: 3.1rem;
-  }
-  .hr1 {
-    margin: 2rem 1.5rem 0.5rem 1.5rem;
-  }
-}
-
-@media screen and (min-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1) {
-  .container {
-    display: -ms-grid;
-    display: grid;
-    margin: 0 auto;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    -ms-grid-columns: (minmax(10em, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
-  }
-  .checkout {
-    font-size: 2.25rem;
-    line-height: 2.75rem;
-    margin: 4.5rem 0 1.2rem 17rem;
-  }
-  /* forms */
-  .forms {
-    width: 100%;
-    margin: -32rem 2rem 0 17rem;
-  }
-  .contact-info {
-    font-size: 1.1rem;
-    line-height: 1.34rem;
-    margin: 3rem 0 0.2rem 0.75rem;
-  }
-  .shipping-adress {
-    font-size: 1.1rem;
-    line-height: 1.34rem;
-    margin: 3rem 0 0.2rem 0.75rem;
-  }
-  .input-container {
-    width: 120%;
-    font-size: 0.75rem;
-    line-height: 0.9rem;
-    margin: 1rem 0 0.2rem 0.75rem;
-  }
-  .input-form {
-    width: 465px;
-    font-size: 1rem;
-    line-height: 1.1rem;
-    margin: 0rem 0.75rem 0rem 0.75rem;
-    padding-left: 2.4rem;
-  }
-  .country-and-postal-box {
-    display: inline-block;
-    width: 17.5%;
-  }
-  #country-select {
-    width: 217px;
-    font-size: 0.875rem;
-    line-height: 0.875rem;
-  }
-  .postal-code {
-    width: 13.6rem;
-    font-size: 0.875rem;
-    line-height: 0.875rem;
-    margin-left: 0rem;
-  }
-  .save-info {
-    font-size: 0.75rem;
-    line-height: 0.9rem;
-  }
-  input[type="button"].continue {
-    margin: 2rem 0rem 11rem 22rem;
-  }
-  .rectangle-purchase {
-    width: 24%;
-    margin: 4rem 0rem 0 50rem;
-  }
-  .backbag {
-    width: 110%;
-    margin: 1.5rem 0rem 0rem 1.5rem;
-  }
-  .name-bag {
-    font-size: 1rem;
-    line-height: 1.25rem;
-    margin: 1.9rem 0rem 0.7rem 0.6rem;
-  }
-  .price1 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-    margin: -0.2rem 0rem 0.7rem 0.6rem;
-  }
-  .old-price1 {
-    font-size: 0.75rem;
-    line-height: 0.8rem;
-    margin: 0rem 0rem 0rem 0.7rem;
-  }
-  #myform {
-    margin: 0.9rem 0 0 0.5rem;
-    width: 8.3rem;
-    height: 3.25rem;
-  }
-  .shoes {
-    width: 110%;
-    max-width: 100ch;
-    margin: 1.9rem 0rem 1.7rem 1.5rem;
-  }
-  .name-shoes {
-    font-size: 1rem;
-    line-height: 1.25rem;
-    margin: 2.2rem 0rem 0.7rem 0.6rem;
-  }
-  .price2 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-    margin: -1.6rem 0rem 0.7rem 0.6rem;
-  }
-  .old-price2 {
-    font-size: 0.75rem;
-    line-height: 0.8rem;
-    margin: -1.35rem 0rem 0rem 0.7rem;
-  }
-  #myform2 {
-    margin: -0.5rem 0 0 0.5rem;
-    width: 8.3rem;
-    height: 3.25rem;
-  }
-  .hr1 {
-    margin: 2rem 1.5rem 0.5rem 1.5rem;
-  }
-  footer {
-    font-size: 0.875rem;
-    line-height: 1rem;
-  }
+.purchase__price p,
+.total__price p {
+  font-size: 0.875rem;
+  margin-left: auto;
+  margin-top: 0.15rem;
+  color: #4e5150;
 }
 /*# sourceMappingURL=style.css.map */
