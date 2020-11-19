@@ -2,116 +2,170 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="/devchallenges-checkout-page/scss/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script scr="jquery.js"></script>
-  <title>Checkout page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/devchallenges-checkout-page/scss/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script scr="script.js"></script>
+    <title>Checkout page</title>
 </head>
 
 <body>
-  <div class="container"></div>
-  <h1 class="checkout">Checkout</h1>
+    <div class="wrap1">
+        <h1 class="checkout">Checkout</h1>
+        <div class="container__one">
+            <div class="purchase__box">
 
-  <section class="rectangle-purchase">
-    <div class="backbag-section">
-      <img class="backbag" src="./assets/photo1.png" alt="backbag">
-      <h5 class="name-bag">Vintage Backbag</h5>
-      <h5 class="price1">$54.99</h5>
-      <h5 class="old-price1">$94.99</h5>
+                <div class="purchase__item">
 
-      <form id="myform" method="POST" action="#">
-        <input type="button" value="-" class="qtyminus" field="quantity" />
-        <input type="number" name="quantity" value="1" class="qty" />
-        <input type="button" value="+" class="qtyplus" field="quantity" />
-      </form>
+                    <div class="item__image">
+                        <img src="./assets/photo1.png" alt="backbag">
+                    </div>
 
-    </div>
+                    <div class="item__details">
+                        <div class="item__name">
+                            <p>Vintage Backbag</p>
+                        </div>
 
-    <div class="shoes-section">
-      <img class="shoes" src="./assets/photo2.png" alt="shoes">
-      <h5 class="name-shoes">Levi Shoes</h5>
-      <h5 class="price2">$74.99</h5>
-      <h5 class="old-price2">$124.99</h5>
-      <form id="myform2" method="POST" action="#">
-        <input type="button" value="-" class="qtyminus" field="quantity" />
-        <input type="number" name="quantity2" value="1" class="qty">
-        <input type="button" value="+" class="qtyplus" field="quantity" />
-      </form>
-    </div>
+                        <div class="item__price">
+                            <span class="item__price--sale">$54.99</span>
+                            <p class="item__price--old">$94.99</p>
+                        </div>
 
-    <hr class="hr1">
-    <h3 class="shipping">Shipping <span>$19</span></h3>
-    <hr class="hr2">
-    <h3 class="total">Total<span>$148.98</span></h3>
+                        <div class="item__count">
+                            <div class="item__remove remove1">
+                                <img src="assets/remove-black-18dp.svg" alt="minus symbol">
+                            </div>
 
-  </section>
+                            <div class="item__quantity quantity1">
+                                <p>1</p>
+                            </div>
 
-  <section class="forms">
-    <h4 class="contact-info">Contact infomation</h4>
+                            <div class="item__add add1">
+                                <img src="assets/add-black-18dp.svg" alt="plus symbol">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <label class="input-container" for="e-mail">E-mail</label> <br>
-    <i class="material-icons icon md-24">email</i>
-    <input class="input-form" type="email" id="email" name="email" pattern=".+@globex.com" size="30"
-      placeholder="Enter your email..." required>
+                <div class="purchase__item">
 
-    <div>
-      <label class="input-container" for="phone">Phone</label> <br>
-      <i class="material-icons md-24 icon">call</i>
-      <input class="input-form" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-        placeholder="Enter your phone..." required>
-    </div>
+                    <div class="item__image">
+                        <img src="./assets/photo2.png" alt="shoes">
+                    </div>
 
-    <h4 class="shipping-adress">Shipping address</h4>
+                    <div class="item__details">
+                        <div class="item__name">
+                            <p>Levi Shoes</p>
+                        </div>
 
-    <div>
-      <label class="input-container" for="fullname">Full Name</label> <br>
-      <i class="material-icons md-24 icon">account_circle</i>
-      <input class="input-form" type="text" id="fullname" name="fulltname" placeholder="Rodney Cotton" required>
-    </div>
+                        <div class="item__price">
+                            <span class="item__price--sale">$74.99</span>
+                            <p class="item__price--old">$124.99</p>
+                        </div>
 
-    <div>
-      <label class="input-container" for="adress">Adress</label> <br>
-      <i class="material-icons md-24 icon">home</i>
-      <input class="input-form" type="text" id="adress" name="adress" placeholder="Your address.." required>
-    </div>
 
-    <div>
-      <label class="input-container" for="city">City</label><br>
-      <i class="material-icons md-24 icon">location_city</i>
-      <input class="input-form" type="text" id="city" name="city" placeholder="Your city.." required>
-    </div>
+                        <div class="item__count">
+                            <div class="item__remove remove1">
+                                <img src="assets/remove-black-18dp.svg" alt="minus symbol">
+                            </div>
 
-    <div class="country-and-postal-box">
-      <label class="input-container" for="country">Country</label> <br>
-      <i class="material-icons md-24 icon">location_city</i>
-      <select required aria-required="true" name="country" id="country-select">
-        <option selected="" value="Default">Your country..</option>
-        <option value="au">Australia</option>
+                            <div class="item__quantity quantity1">
+                                <p>1</p>
+                            </div>
+
+                            <div class="item__add add1">
+                                <img src="assets/add-black-18dp.svg" alt="plus symbol">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="purchase__price">
+                    <div class="shipping__price">
+                        <span>Shipping</span>
+                        <p>$19</p>
+                    </div>
+
+                    <div class="total__price">
+                        <span>Total</span>
+                        <p>$148.98</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <form action="#" class="form__container">
+                <div class="contact__section">
+                    <h3>Contact infomation</h3>
+
+                    <div class="email__part form__part">
+                        <label for="e-mail">E-mail</label>
+                        <input type="email" id="email" name="email" class="input__form" pattern=".+@globex.com" size="30" placeholder="Enter your email..." required>
+                        <i class="material-icons icon md-24">email</i>
+                    </div>
+
+                    <div class="phone__part form__part">
+                        <label for="tel">Phone</label>
+                        <input type="tel" class="input__form" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter your phone..." required>
+                        <i class="material-icons md-24 icon">call</i>
+                    </div>
+                </div>
+
+                <div class="adress__part">
+                    <h3>Shipping address</h3>
+                    <div class="name__part form__part">
+                        <label for="name">Full Name</label>
+                        <input class="input__form" type="text" id="fullname" name="fullname" placeholder="Your name..." required>
+                        <i class="material-icons md-24 icon">account_circle</i>
+                    </div>
+
+                    <div class="adress__part form__part">
+                        <label for="adress">Adress</label>
+                        <input class="input__form" type="text" id="adress" name="adress" placeholder="Your address.." required>
+                        <i class="material-icons md-24 icon">home</i>
+                    </div>
+
+                    <div class="city__part form__part">
+                        <label for="city">City</label>
+                        <input class="input__form" type="text" id="city" name="city" placeholder="Your city.." required>
+                        <i class="material-icons md-24 icon">location_city</i>
+                    </div>
+
+                    <div class="wrap__container">
+                        <div class="country__part form__part">
+                            <label for="country">Country</label>
+                            <select required aria-required="true" name="country" id="country" class="input__form">
+        <option value="select">Your country..</option>
+        <option value="au">China</option>
         <option value="ca">Canada</option>
-        <option value="usa">USA</option>
-      </select>
-    </div>
+        <option value="usa">Croatia</option>
+                </select>
+                            <i class="material-icons md-24 icon">location_city</i>
+                        </div>
 
-    <div class="country-and-postal-box cf-medium">
-      <label class="input-container" for="postal-code">Postal code</label> <br>
-      <i class="material-icons md-24 icon">markunread_mailbox</i>
-      <input class="postal-code" type="number" id="postal-code" name="postal-code" placeholder="Your postal code.."
-        required>
-    </div>
+                        <div class="postal__part form__part">
+                            <label for="postalcode">Postal code</label>
+                            <input class="form__input" type="number" id="postalcode" name="postalcode" placeholder="Your postal code.." required>
+                            <i class="material-icons md-24 icon">markunread_mailbox</i>
+                        </div>
+                    </div>
+                </div>
 
-    <div>
-      <input class="checkbox" type="checkbox" id="save_info" name="save_info" required>
-      <label class="save-info" for="save_info">Save this information for next time</label>
-    </div>
+                <div class="save__part">
+                    <input type="checkbox" id="save_info" name="save_info" required>
+                    <label for="save_info">Save this information for next time</label>
+                </div>
 
-    <input class="continue" type="button" value="Continue">
-  </section>
-  <footer><a href="https://github.com/MatejaC/devchallenges-checkout-page">Mateja Cimpersak @
+                <div class="continue">
+                    <button type="button">Continue</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer><a href="https://github.com/MatejaC/devchallenges-checkout-page">Mateja Cimpersak @
       DevChallenges.io</a></footer>
-
 
 </body>
 
