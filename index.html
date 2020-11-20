@@ -103,52 +103,53 @@
                     <div class="email__part form__part">
                         <label for="e-mail">E-mail</label>
                         <input type="email" id="email" name="email" class="input__form" pattern=".+@globex.com" size="30" placeholder="Enter your email..." required>
-                        <i class="material-icons icon md-24">email</i>
+                        <i class="material-icons icon md-24 form__icon">email</i>
                     </div>
 
                     <div class="phone__part form__part">
                         <label for="tel">Phone</label>
                         <input type="tel" class="input__form" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter your phone..." required>
-                        <i class="material-icons md-24 icon">call</i>
+                        <i class="material-icons md-24 icon form__icon">call</i>
                     </div>
                 </div>
 
                 <div class="adress__part">
                     <h3>Shipping address</h3>
+
                     <div class="name__part form__part">
                         <label for="name">Full Name</label>
                         <input class="input__form" type="text" id="fullname" name="fullname" placeholder="Your name..." required>
-                        <i class="material-icons md-24 icon">account_circle</i>
+                        <i class="material-icons md-24 icon form__icon">account_circle</i>
                     </div>
 
                     <div class="adress__part form__part">
                         <label for="adress">Adress</label>
                         <input class="input__form" type="text" id="adress" name="adress" placeholder="Your address.." required>
-                        <i class="material-icons md-24 icon">home</i>
+                        <i class="material-icons md-24 icon form__icon">home</i>
                     </div>
 
                     <div class="city__part form__part">
                         <label for="city">City</label>
                         <input class="input__form" type="text" id="city" name="city" placeholder="Your city.." required>
-                        <i class="material-icons md-24 icon">location_city</i>
+                        <i class="material-icons md-24 icon form__icon">location_city</i>
                     </div>
 
                     <div class="wrap__container">
                         <div class="country__part form__part">
                             <label for="country">Country</label>
                             <select required aria-required="true" name="country" id="country" class="input__form">
-        <option value="select">Your country..</option>
-        <option value="au">China</option>
-        <option value="ca">Canada</option>
-        <option value="usa">Croatia</option>
-                </select>
-                            <i class="material-icons md-24 icon">location_city</i>
+                              <option value="select">Your country..</option>
+                              <option value="au">China</option>
+                              <option value="ca">Canada</option>
+                              <option value="usa">Croatia</option>
+                            </select>
+                            <i class="material-icons md-24 icon form__icon">location_city</i>
                         </div>
 
                         <div class="postal__part form__part">
                             <label for="postalcode">Postal code</label>
-                            <input class="form__input" type="number" id="postalcode" name="postalcode" placeholder="Your postal code.." required>
-                            <i class="material-icons md-24 icon">markunread_mailbox</i>
+                            <input class="input__form" type="text" id="postalcode" name="postalcode" placeholder="Your postal code..">
+                            <i class="material-icons md-24 icon form__icon">markunread_mailbox</i>
                         </div>
                     </div>
                 </div>
