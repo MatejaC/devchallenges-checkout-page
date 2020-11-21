@@ -1,255 +1,309 @@
-    /* fonts */
-    
-    $font: "Montserrat",
-    sans-serif;
-    /* colors */
-    
-    $background-gray: #f2f2f2;
-    $gray-dark: #4e5150;
-    $gray1: #333333;
-    $gray2-email: #4f4f4f;
-    $gray3-border-placeholder-icons: #828282;
-    $gray4-line: #bdbdbd;
-    $gray5-background-icons: #e0e0e0;
-    $gray6-background-rectangle: #f2f2f2;
-    $orange: #f2994a;
-    $white: #ffffff;
-    $grayFooter: #a9a9a9;
-    //  base styles 
-    *,
-    *::before,
-    *::after {
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        padding: 0;
-    }
-    
+/* fonts */
+
+$font: "Montserrat",
+sans-serif;
+
+/* colors */
+
+$background-gray: #f2f2f2;
+$gray-dark: #4e5150;
+$gray1: #333333;
+$gray2-email: #4f4f4f;
+$gray3-border-placeholder-icons: #828282;
+$gray4-line: #bdbdbd;
+$gray5-background-icons: #e0e0e0;
+$gray6-background-rectangle: #f2f2f2;
+$orange: #f2994a;
+$orange-shade:#ef7e1a;
+$white: #ffffff;
+$grayFooter: #a9a9a9;
+//  base styles 
+*,
+*::before,
+*::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: $font;
+    font-weight: 600;
+    height: 100vh;
+    padding: 1rem 1rem;
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+p,
+span,
+h1,
+h3 {
+    color: $gray1;
+}
+
+// mobile 
+h1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: $gray-dark;
+    margin-bottom: 1rem;
+}
+
+.purchase__box {
+    background: $gray6-background-rectangle;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    -webkit-border-radius: 0.7rem;
+    -moz-border-radius: 0.7rem;
+    -ms-border-radius: 0.7rem;
+    -o-border-radius: 0.7rem;
+}
+
+.purchase__item {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.item__image {
+    width: 8rem;
+    border-radius: 10px;
+    margin-right: 1rem;
+    overflow: hidden;
+}
+
+.item__image img {
+    width: 100%;
+}
+
+.item__details {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.item__name {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: $gray-dark;
+}
+
+.item__price {
+    display: flex;
+    flex: 1;
+    font-size: 0.75rem;
+    margin-top: -.6rem;
+}
+
+.item__price--sale {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    color: $orange;
+}
+
+.item__price p {
+    color: $gray-dark;
+    text-decoration: line-through;
+    margin: .1rem 0 0 0;
+}
+
+//  item count - box
+.item__count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $gray3-border-placeholder-icons;
+    padding: 0rem 0.7rem;
+    border-radius: 10px;
+}
+
+.item__remove,
+.item__add {
+    background-color: $gray5-background-icons;
+    border-radius: 3px;
+}
+
+.item__quantity {
+    margin: 0 auto;
+}
+
+.purchase__price {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+.shipping__price,
+.total__price {
+    display: flex;
+    padding: 0.75rem 0;
+    border-top: 1px solid $gray3-border-placeholder-icons;
+}
+
+.purchase__price p,
+.total__price p {
+    font-size: 0.875rem;
+    margin-left: auto;
+    margin-top: 0.15rem;
+    color: $gray-dark;
+}
+
+// Form / contact information part
+.contact__group h3,
+.address__group h3 {
+    margin-bottom: 1rem;
+}
+
+.contact__group {
+    margin-bottom: 3rem;
+}
+
+.input__form {
+    position: relative;
+    border: 1px solid $gray3-border-placeholder-icons;
+    border-radius: 10px;
+    padding: 0.8rem 0.7rem 0.7rem 2.8rem;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.form__part {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form__icon {
+    position: absolute;
+    top: 1.9rem;
+    left: 0.75rem;
+    color: $gray3-border-placeholder-icons;
+}
+
+.material-icons {
+    display: inline-block;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 21px;
+}
+
+.shipping_address {
+    margin-top: 3rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+}
+
+.wrap__container {
+    width: 100%;
+    display: flex;
+}
+
+.country__part {
+    margin-right: 0.5rem;
+}
+
+.country__part,
+.postal__part {
+    width: 50%;
+}
+
+.save__part {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.save__part label {
+    margin-bottom: 0;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.continue {
+    text-align: right;
+    margin-bottom: 3rem;
+}
+
+button {
+    border-radius: 10px;
+    color: $white;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: $orange;
+    padding: 1rem 2.5rem;
+    border: 0;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: $gray3-border-placeholder-icons;
+    font-size: 0.75rem;
+}
+
+footer a:hover {
+    color: $gray-dark;
+}
+
+// bigger screens
+@media screen and (min-width: 700px) {
     body {
-        font-family: $font;
-        font-weight: 600;
-        height: 100vh;
-        padding: 1rem 1rem;
-        margin: 0;
-    }
-    
-    img {
-        display: block;
-    }
-    
-    p,
-    span,
-    h1,
-    h3 {
-        color: $gray1;
-    }
-    
-    // mobile 
-    h1 {
-        font-size: 1.5rem;
-        line-height: 1.8rem;
-        color: $gray-dark;
-        margin-bottom: 1rem;
-    }
-    
-    .purchase__box {
-        background: $gray6-background-rectangle;
-        border-radius: 0.7rem;
-        padding: 1rem;
-        margin-bottom: 2rem;
-        -webkit-border-radius: 0.7rem;
-        -moz-border-radius: 0.7rem;
-        -ms-border-radius: 0.7rem;
-        -o-border-radius: 0.7rem;
-    }
-    
-    .purchase__item {
-        display: flex;
-        margin-bottom: 2rem;
-    }
-    
-    .item__image {
-        width: 8rem;
-        border-radius: 10px;
-        margin-right: 1rem;
-        overflow: hidden;
-    }
-    
-    .item__image img {
-        width: 100%;
-    }
-    
-    .item__details {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        padding: 4rem 0 0;
     }
-    
-    .item__name {
-        font-size: 0.875rem;
-        margin-bottom: 0.5rem;
-        font-size: 0.75rem;
-        line-height: 1rem;
-        color: $gray-dark;
-    }
-    
-    .item__price {
-        display: flex;
+    .wrap1 {
         flex: 1;
-        font-size: 0.75rem;
-        margin-top: -.6rem;
-    }
-    
-    .item__price--sale {
-        font-size: 1rem;
-        margin-right: 0.5rem;
-        color: $orange;
-    }
-    
-    .item__price p {
-        color: $gray-dark;
-        text-decoration: line-through;
-        margin: .1rem 0 0 0;
-    }
-    
-    //  item count - box
-    .item__count {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid $gray3-border-placeholder-icons;
-        padding: 0rem 0.7rem;
-        border-radius: 10px;
-    }
-    
-    .item__remove,
-    .item__add {
-        background-color: $gray5-background-icons;
-        border-radius: 3px;
-    }
-    
-    .item__quantity {
+        max-width: 1080px;
         margin: 0 auto;
-    }
-    
-    .purchase__price {
-        display: flex;
-        flex-direction: column;
-        margin-top: 4rem;
-    }
-    
-    .shipping__price,
-    .total__price {
-        display: flex;
-        padding: 0.75rem 0;
-        border-top: 1px solid $gray3-border-placeholder-icons;
-    }
-    
-    .purchase__price p,
-    .total__price p {
-        font-size: 0.875rem;
-        margin-left: auto;
-        margin-top: 0.15rem;
-        color: $gray-dark;
-    }
-    /* Form section */
-    
-    .contact__group h3,
-    .address__group h3 {
-        margin-bottom: 1rem;
-    }
-    
-    .contact__group {
-        margin-bottom: 3rem;
-    }
-    
-    .input__form {
-        position: relative;
-        border: 1px solid $gray3-border-placeholder-icons;
-        border-radius: 10px;
-        padding: 0.8rem 0.7rem 0.7rem 2.8rem;
-        width: 100%;
-        font-size: 1rem;
-    }
-    
-    .form__part {
-        position: relative;
-        margin-bottom: 1rem;
-    }
-    
-    .form__icon {
-        position: absolute;
-        top: 1.9rem;
-        left: 0.75rem;
-        color: $gray3-border-placeholder-icons;
-    }
-    
-    .material-icons {
-        display: inline-block;
-        font-weight: normal;
-        font-style: normal;
-        font-size: 21px;
-    }
-    
-    label {
-        display: block;
-        margin-bottom: 0.25rem;
-        font-size: 0.75rem;
-    }
-    
-    .wrap__container {
-        width: 100%;
-        display: flex;
-    }
-    
-    .country__part {
-        margin-right: 0.5rem;
-    }
-    
-    .country__part,
-    .postal__part {
-        width: 50%;
-    }
-    
-    .save__part {
-        display: flex;
         align-items: center;
-        margin-bottom: 1.5rem;
+        justify-items: center;
     }
-    
-    .save__part label {
-        margin-bottom: 0;
+    .container1 {
+        display: flex;
+        justify-content: space-between;
+        margin-left: .8rem;
+        margin-right: .8rem;
     }
-    
-    input[type="checkbox"] {
-        margin-right: 0.5rem;
+    h1 {
+        margin-left: .8rem;
     }
-    
-    .continue {
-        text-align: right;
-        margin-bottom: 3rem;
+    .item__add,
+    .item__remove {
+        cursor: pointer;
     }
-    
+    form {
+        width: 100%;
+        margin-right: 5rem;
+    }
+    .purchase__box {
+        order: 1;
+        min-width: 20rem;
+        align-self: flex-start;
+        margin-top: 1.5rem;
+    }
+    .shipping_address {
+        margin-top: 3rem;
+    }
     button {
-        border-radius: 10px;
-        color: $white;
-        font-size: 1rem;
-        font-weight: 600;
-        background-color: $orange;
-        padding: 1rem 2.5rem;
-        border: 0;
+        cursor: pointer;
+        &:hover {
+            background-color: $orange-shade;
+        }
     }
-    
-    footer {
-        text-align: center;
-    }
-    
-    footer a {
-        text-decoration: none;
-        color: $gray3-border-placeholder-icons;
-        font-size: 0.75rem;
-    }
-    
-    footer a:hover {
-        color: $gray-dark;
-    }
+}
