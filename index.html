@@ -12,161 +12,160 @@
 </head>
 
 <body>
-    <div class="wrap1">
-        <h1 class="checkout">Checkout</h1>
-        <div class="container1">
-            <div class="purchase__box">
+    <h1 class="checkout">Checkout</h1>
+    <div class="wrap">
 
-                <div class="purchase__item">
+        <div class="purchase__box">
 
-                    <div class="item__image">
-                        <img src="./assets/photo1.png" alt="backbag">
-                    </div>
+            <div class="purchase__item">
 
-                    <div class="item__details">
-                        <div class="item__name">
-                            <p>Vintage Backbag</p>
-                        </div>
-
-                        <div class="item__price">
-                            <span class="item__price--sale">$54.99</span>
-                            <p class="item__price--old">$94.99</p>
-                        </div>
-
-                        <div class="item__count">
-                            <div class="item__remove remove1">
-                                <img src="assets/remove-black-18dp.svg" alt="minus symbol">
-                            </div>
-
-                            <div class="item__quantity quantity1">
-                                <p>1</p>
-                            </div>
-
-                            <div class="item__add add1">
-                                <img src="assets/add-black-18dp.svg" alt="plus symbol">
-                            </div>
-                        </div>
-                    </div>
+                <div class="item__image">
+                    <img src="./assets/photo1.png" alt="backbag">
                 </div>
 
-                <div class="purchase__item">
-
-                    <div class="item__image">
-                        <img src="./assets/photo2.png" alt="shoes">
+                <div class="item__details">
+                    <div class="item__name">
+                        <p>Vintage Backbag</p>
                     </div>
 
-                    <div class="item__details">
-                        <div class="item__name">
-                            <p>Levi Shoes</p>
-                        </div>
-
-                        <div class="item__price">
-                            <span class="item__price--sale">$74.99</span>
-                            <p class="item__price--old">$124.99</p>
-                        </div>
-
-
-                        <div class="item__count">
-                            <div class="item__remove remove1">
-                                <img src="assets/remove-black-18dp.svg" alt="minus symbol">
-                            </div>
-
-                            <div class="item__quantity quantity1">
-                                <p>1</p>
-                            </div>
-
-                            <div class="item__add add1">
-                                <img src="assets/add-black-18dp.svg" alt="plus symbol">
-                            </div>
-                        </div>
+                    <div class="item__price">
+                        <span class="item__price--sale">$54.99</span>
+                        <p class="item__price--old">$94.99</p>
                     </div>
+
+                    <div class="incrementor__container">
+                        <button class="icon__container" onclick="incrementor(event)" for="vintage-backbag-count" action="remove">
+                            <span class="material-icons">remove</span>
+                        </button>
+
+                        <input id="vintage-backbag-count" class="item__quantity" type="text" value="1" />
+
+                        <button class="icon__container" onclick="incrementor(event)" for="vintage-backbag-count" action="add">
+                        <span class="material-icons">add</span>
+                        </button>
+                    </div>
+
                 </div>
-
-                <div class="purchase__price">
-                    <div class="shipping__price">
-                        <span>Shipping</span>
-                        <p>$19</p>
-                    </div>
-
-                    <div class="total__price">
-                        <span>Total</span>
-                        <p>$148.98</p>
-                    </div>
-                </div>
-
             </div>
 
-            <form action="#" class="form__container">
-                <div class="contact__section">
-                    <h3>Contact infomation</h3>
+            <div class="purchase__item">
 
-                    <div class="email__part form__part">
-                        <label for="e-mail">E-mail</label>
-                        <input type="email" id="email" name="email" class="input__form" pattern=".+@globex.com" size="30" placeholder="Enter your email..." required>
-                        <i class="material-icons icon md-24 form__icon">email</i>
-                    </div>
-
-                    <div class="phone__part form__part">
-                        <label for="tel">Phone</label>
-                        <input type="tel" class="input__form" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter your phone..." required>
-                        <i class="material-icons md-24 icon form__icon">call</i>
-                    </div>
+                <div class="item__image">
+                    <img src="./assets/photo2.png" alt="shoes">
                 </div>
 
-                <div class="adress__part">
-                    <h3 class="shipping_address">Shipping address</h3>
-
-                    <div class="name__part form__part">
-                        <label for="name">Full Name</label>
-                        <input class="input__form" type="text" id="fullname" name="fullname" placeholder="Your name..." required>
-                        <i class="material-icons md-24 icon form__icon">account_circle</i>
+                <div class="item__details">
+                    <div class="item__name">
+                        <p>Levi Shoes</p>
                     </div>
 
-                    <div class="adress__part form__part">
-                        <label for="adress">Adress</label>
-                        <input class="input__form" type="text" id="adress" name="adress" placeholder="Your address.." required>
-                        <i class="material-icons md-24 icon form__icon">home</i>
+                    <div class="item__price">
+                        <span class="item__price--sale">$74.99</span>
+                        <p class="item__price--old">$124.99</p>
                     </div>
 
-                    <div class="city__part form__part">
-                        <label for="city">City</label>
-                        <input class="input__form" type="text" id="city" name="city" placeholder="Your city.." required>
+                    <div class="incrementor__container">
+                        <button class="icon__container" onclick="incrementor(event)" for="levi-shoes-count" action="remove">
+                                <span class="material-icons">remove</span>
+                            </button>
+
+                        <input id="levi-shoes-count" class="item__quantity" type="text" value="1" />
+
+                        <button class="icon__container" onclick="incrementor(event)" for="levi-shoes-count" action="add">
+                            <span class="material-icons">add</span>
+                            </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="purchase__price">
+                <div class="shipping__price">
+                    <span>Shipping</span>
+                    <p>$19</p>
+                </div>
+
+                <div class="total__price">
+                    <span>Total</span>
+                    <p>$148.98</p>
+                </div>
+            </div>
+        </div>
+
+
+        <form action="#" class="form__container">
+            <div class="contact__section">
+
+                <h3>Contact infomation</h3>
+
+                <div class="email__part form__part">
+                    <label for="emailAddress">E-mail</label>
+                    <input id="emailAddress" type="email" required class="input__form" placeholder="Enter your email..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Invalid e-mail address">
+                    <i class="material-icons icon md-24 form__icon">email</i>
+                </div>
+
+                <div class="phone__part form__part">
+                    <label for="tel">Phone</label>
+                    <input type="tel" class="input__form" id="phone" name="phone" placeholder="Enter your phone..." required/>
+                    <i class="material-icons md-24 icon form__icon">call</i>
+                </div>
+            </div>
+
+            <div class="adress__part">
+                <h3 class="shipping_address">Shipping address</h3>
+
+                <div class="name__part form__part">
+                    <label for="name">Full Name</label>
+                    <input class="input__form" type="text" id="name" name="fullname" placeholder="Your name..." value="Rodney Cotton" required/>
+                    <i class="material-icons md-24 icon form__icon">account_circle</i>
+                </div>
+
+                <div class="adress__part form__part">
+                    <label for="adress">Adress</label>
+                    <input class="input__form" type="text" id="adress" name="adress" placeholder="Your address.." required/>
+                    <i class="material-icons md-24 icon form__icon">home</i>
+                </div>
+
+                <div class="city__part form__part">
+                    <label for="city">City</label>
+                    <input class="input__form" type="text" id="city" name="city" placeholder="Your city.." required/>
+                    <i class="material-icons md-24 icon form__icon">location_city</i>
+                </div>
+
+                <div class="wrap__container">
+                    <div class="country__part form__part">
+                        <label for="country">Country</label>
+                        <select aria-required="true" name="country" id="country" class="input__form" required>
+                        <option value="select">Your country..</option>
+                        <option value="cn">China</option>
+                        <option value="kh">Cambogia</option>
+                        <option value="hr">Croatia</option>
+                        </select>
                         <i class="material-icons md-24 icon form__icon">location_city</i>
                     </div>
 
-                    <div class="wrap__container">
-                        <div class="country__part form__part">
-                            <label for="country">Country</label>
-                            <select required aria-required="true" name="country" id="country" class="input__form">
-                              <option value="select">Your country..</option>
-                              <option value="au">China</option>
-                              <option value="ca">Canada</option>
-                              <option value="usa">Croatia</option>
-                            </select>
-                            <i class="material-icons md-24 icon form__icon">location_city</i>
-                        </div>
-
-                        <div class="postal__part form__part">
-                            <label for="postalcode">Postal code</label>
-                            <input class="input__form" type="text" id="postalcode" name="postalcode" placeholder="Your postal code..">
-                            <i class="material-icons md-24 icon form__icon">markunread_mailbox</i>
-                        </div>
+                    <div class="postal__part form__part">
+                        <label for="postalcode">Postal code</label>
+                        <input class="input__form" type="text" id="postalcode" name="postalcode" placeholder="Your postal code.." required/>
+                        <i class="material-icons md-24 icon form__icon">markunread_mailbox</i>
                     </div>
                 </div>
+            </div>
 
-                <div class="save__part">
-                    <input type="checkbox" id="save_info" name="save_info" required>
-                    <label for="save_info">Save this information for next time</label>
-                </div>
+            <div class="save__part">
+                <input type="checkbox" id="save_info" name="save_info" required/>
+                <label for="save_info">Save this information for next time</label>
+            </div>
 
-                <div class="continue">
-                    <button type="button">Continue</button>
-                </div>
-            </form>
-        </div>
+            <div class="continue">
+                <input class="continue__button" type="submit" value="Continue">
+            </div>
+        </form>
     </div>
+
     <footer><a href="https://github.com/MatejaC/devchallenges-checkout-page">Mateja Cimpersak @
       DevChallenges.io</a></footer>
+
+    <script src="script.js"></script>
 
 </body>
 
