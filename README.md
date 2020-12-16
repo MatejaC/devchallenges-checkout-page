@@ -13,7 +13,4 @@ User story: I can select at least 3 countries from the dropdown
 User story: When I click submit button or press enter, I can see a warning if validation fails
 User story: When I click submit button or press enter, I can see a successful alert if validation succeeds
 ...
-
-### my solution
-
-<https://matejac.github.io/devchallenges-checkout-page/>>
+ my solution at <https://matejac.github.io/devchallenges-checkout-page/>>
